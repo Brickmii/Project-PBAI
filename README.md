@@ -207,7 +207,7 @@ PBAI is built on the Motion Calendar framework, which proposes:
 5. **Logic emerges from Alignment**; arithmetic emerges from Order
 
 For the full theoretical foundation:  
-**[The Motion Calendar →](https://yourusername.github.io/motion-calendar/)**
+**[The Motion Calendar →](https://brickmii.github.io/motion-calendar/)**
 
 ---
 
