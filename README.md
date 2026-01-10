@@ -9,7 +9,7 @@ Version 0.3 | January 2026
 
 ## What Is This?
 
-PBAI is an artificial intelligence architecture built on the [Motion Calendar](https://yourusername.github.io/motion-calendar/) framework—a theoretical foundation proposing that motion, rather than matter or information, is the primitive constituent of reality.
+PBAI is an artificial intelligence architecture built on the [Motion Calendar](https://Brickmii.github.io/Motion-Calendar/) framework—a theoretical foundation proposing that motion, rather than matter or information, is the primitive constituent of reality.
 
 Unlike conventional AI systems that rely on statistical inference and gradient descent, PBAI operates through motion-native principles:
 
@@ -233,8 +233,8 @@ Attribution appreciated but not required.
 
 ## Links
 
-- [Motion Calendar (Theory)](https://yourusername.github.io/motion-calendar/)
-- [PBAI Repository](https://github.com/yourusername/pbai)
+- [Motion Calendar (Theory)](https://Brickmii.github.io/Motion-Calendar/)
+- [PBAI Repository](https://github.com/Brickmii/Project-PBAI)
 
 ---
 
