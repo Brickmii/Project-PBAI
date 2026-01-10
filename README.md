@@ -225,9 +225,9 @@ The name is honest uncertainty.
 
 ## License
 
-MIT License. Use it, modify it, build on it.
+GPU Public license
 
-Attribution appreciated but not required.
+Please cite Motion Calendar framework for implementations
 
 ---
 
