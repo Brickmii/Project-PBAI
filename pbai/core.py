@@ -1,0 +1,7 @@
+# motion calendar identity kernel for system,
+# Responsible for managing growth of identity state,
+# identity consists of random base generated values upon birth event,
+# identity gains values and functions learned as truthful information,
+# information grows size of identity state as new information,
+# core connects to keystone,
+# core calls randomizer for birth event generation,
