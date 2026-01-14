@@ -1,6 +1,0 @@
-# responsible for golden gate learning instantiation,
-# triggered by instantiator in proper circumstances,
-# system triggers golden gate when new function is executed,
-# system does not trigger when random function is executed,
-# unless random function reveals new functions,
-# new function may then be executed and gated,
