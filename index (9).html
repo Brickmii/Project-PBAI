@@ -1,0 +1,1208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PBAI — Physics-Based Artificial Intelligence</title>
+    <meta name="description" content="A Large Motion Model framework for artificial general intelligence grounded in motion-theoretic principles.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;500&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --color-bg: #0a0a0f;
+            --color-bg-elevated: #12121a;
+            --color-bg-card: #1a1a24;
+            --color-primary: #6366f1;
+            --color-primary-dim: #4f46e5;
+            --color-secondary: #22d3ee;
+            --color-accent: #f472b6;
+            --color-text: #e2e8f0;
+            --color-text-dim: #94a3b8;
+            --color-text-muted: #64748b;
+            --color-border: #2a2a3a;
+            --font-display: 'Cormorant Garamond', Georgia, serif;
+            --font-body: 'Outfit', -apple-system, sans-serif;
+            --font-mono: 'JetBrains Mono', monospace;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: var(--font-body);
+            background: var(--color-bg);
+            color: var(--color-text);
+            line-height: 1.7;
+            overflow-x: hidden;
+        }
+
+        /* Canvas Background */
+        #motion-canvas {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+            opacity: 0.4;
+        }
+
+        /* Navigation */
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 100;
+            padding: 1.5rem 3rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            backdrop-filter: blur(20px);
+            background: rgba(10, 10, 15, 0.8);
+            border-bottom: 1px solid var(--color-border);
+        }
+
+        .nav-logo {
+            font-family: var(--font-display);
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--color-text);
+            text-decoration: none;
+            letter-spacing: 0.1em;
+        }
+
+        .nav-logo span {
+            color: var(--color-primary);
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2.5rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: var(--color-text-dim);
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 400;
+            letter-spacing: 0.05em;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: var(--color-secondary);
+        }
+
+        /* Main Content */
+        main {
+            position: relative;
+            z-index: 1;
+        }
+
+        section {
+            padding: 8rem 3rem;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding-top: 6rem;
+            position: relative;
+        }
+
+        .hero-badge {
+            display: inline-block;
+            padding: 0.5rem 1.25rem;
+            background: rgba(99, 102, 241, 0.15);
+            border: 1px solid rgba(99, 102, 241, 0.3);
+            border-radius: 100px;
+            font-size: 0.8rem;
+            font-weight: 500;
+            color: var(--color-primary);
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            margin-bottom: 2rem;
+            animation: fadeInUp 0.8s ease forwards;
+            opacity: 0;
+        }
+
+        .hero h1 {
+            font-family: var(--font-display);
+            font-size: clamp(4rem, 12vw, 10rem);
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            line-height: 0.9;
+            margin-bottom: 1rem;
+            animation: fadeInUp 0.8s ease 0.1s forwards;
+            opacity: 0;
+        }
+
+        .hero h1 .gradient-text {
+            background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 50%, var(--color-accent) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero-subtitle {
+            font-family: var(--font-display);
+            font-size: clamp(1.25rem, 3vw, 1.75rem);
+            font-weight: 400;
+            font-style: italic;
+            color: var(--color-text-dim);
+            margin-bottom: 2rem;
+            animation: fadeInUp 0.8s ease 0.2s forwards;
+            opacity: 0;
+        }
+
+        .hero-description {
+            max-width: 600px;
+            font-size: 1.1rem;
+            color: var(--color-text-muted);
+            margin-bottom: 3rem;
+            animation: fadeInUp 0.8s ease 0.3s forwards;
+            opacity: 0;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            justify-content: center;
+            animation: fadeInUp 0.8s ease 0.4s forwards;
+            opacity: 0;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 1rem 2rem;
+            border-radius: 8px;
+            font-family: var(--font-body);
+            font-size: 0.95rem;
+            font-weight: 500;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            border: none;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dim) 100%);
+            color: white;
+            box-shadow: 0 4px 20px rgba(99, 102, 241, 0.3);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 30px rgba(99, 102, 241, 0.4);
+        }
+
+        .btn-secondary {
+            background: var(--color-bg-card);
+            color: var(--color-text);
+            border: 1px solid var(--color-border);
+        }
+
+        .btn-secondary:hover {
+            background: var(--color-bg-elevated);
+            border-color: var(--color-primary);
+        }
+
+        .scroll-indicator {
+            position: absolute;
+            bottom: 3rem;
+            left: 50%;
+            transform: translateX(-50%);
+            animation: bounce 2s infinite;
+        }
+
+        .scroll-indicator svg {
+            width: 24px;
+            height: 24px;
+            stroke: var(--color-text-muted);
+        }
+
+        /* Section Headers */
+        .section-header {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .section-label {
+            font-family: var(--font-mono);
+            font-size: 0.75rem;
+            font-weight: 500;
+            color: var(--color-primary);
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            margin-bottom: 1rem;
+        }
+
+        .section-title {
+            font-family: var(--font-display);
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            font-weight: 700;
+            line-height: 1.1;
+            margin-bottom: 1.5rem;
+        }
+
+        .section-description {
+            max-width: 700px;
+            margin: 0 auto;
+            font-size: 1.1rem;
+            color: var(--color-text-dim);
+        }
+
+        /* About Section */
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .about-content h3 {
+            font-family: var(--font-display);
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .about-content p {
+            color: var(--color-text-dim);
+            margin-bottom: 1.5rem;
+        }
+
+        .about-visual {
+            position: relative;
+            height: 400px;
+            background: var(--color-bg-card);
+            border-radius: 16px;
+            border: 1px solid var(--color-border);
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .equation-display {
+            font-family: var(--font-display);
+            font-size: 1.5rem;
+            font-style: italic;
+            text-align: center;
+            padding: 2rem;
+        }
+
+        .equation-display .tier {
+            margin-bottom: 1.5rem;
+            opacity: 0;
+            animation: fadeInUp 0.6s ease forwards;
+        }
+
+        .equation-display .tier:nth-child(1) { animation-delay: 0.2s; }
+        .equation-display .tier:nth-child(2) { animation-delay: 0.4s; }
+        .equation-display .tier:nth-child(3) { animation-delay: 0.6s; }
+
+        .equation-display .tier-name {
+            font-size: 0.8rem;
+            font-family: var(--font-mono);
+            font-style: normal;
+            color: var(--color-primary);
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            margin-bottom: 0.5rem;
+        }
+
+        .equation-display .formula {
+            color: var(--color-text);
+        }
+
+        /* Functions Grid */
+        .functions-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem;
+        }
+
+        .function-card {
+            background: var(--color-bg-card);
+            border: 1px solid var(--color-border);
+            border-radius: 16px;
+            padding: 2rem;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .function-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, var(--card-color, var(--color-primary)), transparent);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .function-card:hover {
+            border-color: var(--card-color, var(--color-primary));
+            transform: translateY(-4px);
+        }
+
+        .function-card:hover::before {
+            opacity: 1;
+        }
+
+        .function-card:nth-child(1) { --card-color: #f87171; }
+        .function-card:nth-child(2) { --card-color: #fbbf24; }
+        .function-card:nth-child(3) { --card-color: #34d399; }
+        .function-card:nth-child(4) { --card-color: #60a5fa; }
+        .function-card:nth-child(5) { --card-color: #a78bfa; }
+        .function-card:nth-child(6) { --card-color: #f472b6; }
+
+        .function-symbol {
+            font-family: var(--font-display);
+            font-size: 2rem;
+            font-style: italic;
+            color: var(--card-color, var(--color-primary));
+            margin-bottom: 1rem;
+        }
+
+        .function-name {
+            font-family: var(--font-display);
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 0.75rem;
+        }
+
+        .function-description {
+            font-size: 0.95rem;
+            color: var(--color-text-dim);
+            line-height: 1.6;
+        }
+
+        /* Architecture Section */
+        .architecture-flow {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .arch-step {
+            display: flex;
+            align-items: flex-start;
+            gap: 2rem;
+            padding: 2rem;
+            background: var(--color-bg-card);
+            border: 1px solid var(--color-border);
+            border-radius: 12px;
+            transition: all 0.3s ease;
+        }
+
+        .arch-step:hover {
+            border-color: var(--color-primary);
+        }
+
+        .arch-number {
+            font-family: var(--font-mono);
+            font-size: 0.8rem;
+            font-weight: 500;
+            color: var(--color-bg);
+            background: var(--color-primary);
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .arch-content h4 {
+            font-family: var(--font-body);
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .arch-content p {
+            color: var(--color-text-dim);
+            font-size: 0.95rem;
+        }
+
+        /* Comparison Section */
+        .comparison-table {
+            background: var(--color-bg-card);
+            border: 1px solid var(--color-border);
+            border-radius: 16px;
+            overflow: hidden;
+        }
+
+        .comparison-table table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .comparison-table th,
+        .comparison-table td {
+            padding: 1.25rem 1.5rem;
+            text-align: left;
+            border-bottom: 1px solid var(--color-border);
+        }
+
+        .comparison-table th {
+            font-family: var(--font-mono);
+            font-size: 0.75rem;
+            font-weight: 500;
+            color: var(--color-text-muted);
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            background: var(--color-bg-elevated);
+        }
+
+        .comparison-table th:first-child {
+            color: var(--color-text);
+        }
+
+        .comparison-table th.current {
+            color: #f87171;
+        }
+
+        .comparison-table th.pbai {
+            color: var(--color-secondary);
+        }
+
+        .comparison-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .comparison-table td:first-child {
+            font-weight: 500;
+            color: var(--color-text);
+        }
+
+        .comparison-table td:nth-child(2) {
+            color: var(--color-text-muted);
+        }
+
+        .comparison-table td:nth-child(3) {
+            color: var(--color-secondary);
+        }
+
+        /* Status Section */
+        .status-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+        }
+
+        .status-card {
+            background: var(--color-bg-card);
+            border: 1px solid var(--color-border);
+            border-radius: 16px;
+            padding: 2.5rem;
+        }
+
+        .status-card h3 {
+            font-family: var(--font-display);
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .status-card h3 svg {
+            width: 24px;
+            height: 24px;
+            stroke: var(--color-primary);
+        }
+
+        .status-list {
+            list-style: none;
+        }
+
+        .status-list li {
+            padding: 0.75rem 0;
+            border-bottom: 1px solid var(--color-border);
+            color: var(--color-text-dim);
+            display: flex;
+            align-items: flex-start;
+            gap: 0.75rem;
+        }
+
+        .status-list li:last-child {
+            border-bottom: none;
+        }
+
+        .status-list li::before {
+            content: '→';
+            color: var(--color-primary);
+            font-weight: 600;
+        }
+
+        /* Quote Section */
+        .quote-section {
+            text-align: center;
+            padding: 6rem 3rem;
+            position: relative;
+        }
+
+        .quote-section::before {
+            content: '"';
+            font-family: var(--font-display);
+            font-size: 15rem;
+            color: var(--color-primary);
+            opacity: 0.1;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            line-height: 1;
+        }
+
+        .quote-text {
+            font-family: var(--font-display);
+            font-size: clamp(1.5rem, 4vw, 2.5rem);
+            font-style: italic;
+            font-weight: 400;
+            line-height: 1.4;
+            max-width: 900px;
+            margin: 0 auto 1.5rem;
+            position: relative;
+        }
+
+        .quote-attribution {
+            font-family: var(--font-mono);
+            font-size: 0.85rem;
+            color: var(--color-text-muted);
+            letter-spacing: 0.05em;
+        }
+
+        /* CTA Section */
+        .cta-section {
+            text-align: center;
+            padding: 8rem 3rem;
+            background: linear-gradient(180deg, transparent 0%, rgba(99, 102, 241, 0.05) 100%);
+            border-top: 1px solid var(--color-border);
+        }
+
+        .cta-title {
+            font-family: var(--font-display);
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+        }
+
+        .cta-description {
+            max-width: 600px;
+            margin: 0 auto 2.5rem;
+            color: var(--color-text-dim);
+            font-size: 1.1rem;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        /* Footer */
+        footer {
+            padding: 4rem 3rem;
+            border-top: 1px solid var(--color-border);
+            text-align: center;
+        }
+
+        .footer-logo {
+            font-family: var(--font-display);
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--color-text);
+            margin-bottom: 1rem;
+        }
+
+        .footer-tagline {
+            font-family: var(--font-display);
+            font-style: italic;
+            color: var(--color-text-muted);
+            margin-bottom: 2rem;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .footer-links a {
+            color: var(--color-text-dim);
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: color 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            color: var(--color-primary);
+        }
+
+        .footer-copy {
+            font-size: 0.8rem;
+            color: var(--color-text-muted);
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateX(-50%) translateY(0);
+            }
+            40% {
+                transform: translateX(-50%) translateY(-10px);
+            }
+            60% {
+                transform: translateX(-50%) translateY(-5px);
+            }
+        }
+
+        /* Responsive */
+        @media (max-width: 1024px) {
+            .functions-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .about-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .about-visual {
+                height: 300px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            nav {
+                padding: 1rem 1.5rem;
+            }
+
+            .nav-links {
+                display: none;
+            }
+
+            section {
+                padding: 4rem 1.5rem;
+            }
+
+            .functions-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .status-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .comparison-table {
+                overflow-x: auto;
+            }
+
+            .comparison-table table {
+                min-width: 500px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Motion Background Canvas -->
+    <canvas id="motion-canvas"></canvas>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#" class="nav-logo">P<span>B</span>AI</a>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#framework">Framework</a></li>
+            <li><a href="#architecture">Architecture</a></li>
+            <li><a href="#status">Status</a></li>
+            <li><a href="https://github.com/Brickmii/Project-PBAI" target="_blank">GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <span class="hero-badge">Large Motion Model Framework</span>
+            <h1><span class="gradient-text">PBAI</span></h1>
+            <p class="hero-subtitle">Physics-Based Artificial Intelligence</p>
+            <p class="hero-description">
+                A developmental framework for artificial general intelligence grounded in 
+                motion-theoretic principles rather than statistical pattern matching.
+            </p>
+            <div class="hero-buttons">
+                <a href="#about" class="btn btn-primary">
+                    Learn More
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                </a>
+                <a href="https://github.com/Brickmii/Project-PBAI" target="_blank" class="btn btn-secondary">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                    </svg>
+                    View Source
+                </a>
+            </div>
+            <div class="scroll-indicator">
+                <svg viewBox="0 0 24 24" fill="none" stroke-width="2">
+                    <path d="M12 5v14M19 12l-7 7-7-7"/>
+                </svg>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about">
+            <div class="about-grid">
+                <div class="about-content">
+                    <h3>Intelligence as Structured Motion</h3>
+                    <p>
+                        Contemporary AI systems treat intelligence as pattern recognition over static 
+                        representations. A language model predicts tokens. A vision system classifies 
+                        pixels. A reinforcement learner maximizes reward. Each operates on frozen 
+                        snapshots, optimizing statistical relationships between inputs and outputs.
+                    </p>
+                    <p>
+                        PBAI proposes a different foundation: <strong>motion itself is the primitive</strong>. 
+                        Intelligence emerges not from probability distributions but from the structured 
+                        accumulation of motion. Objects, fields, particles, and informational states are 
+                        understood as stable patterns of motion rather than independently existing substances.
+                    </p>
+                    <p>
+                        This is not metaphor. It is an ontological claim about what fundamentally exists—and 
+                        what a mind built on motion rather than statistics might achieve.
+                    </p>
+                </div>
+                <div class="about-visual">
+                    <div class="equation-display">
+                        <div class="tier">
+                            <div class="tier-name">Consistence</div>
+                            <div class="formula">f(κ, ±)</div>
+                        </div>
+                        <div class="tier">
+                            <div class="tier-name">Existence</div>
+                            <div class="formula">f(κ, ±, x, y) / tκ</div>
+                        </div>
+                        <div class="tier">
+                            <div class="tier-name">Persistence</div>
+                            <div class="formula">f(κ, ±, x, y) · Q · D₁₂ / tκ</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Framework Section -->
+        <section id="framework">
+            <div class="section-header">
+                <div class="section-label">The Motion Calendar</div>
+                <h2 class="section-title">Six Functions of Motion</h2>
+                <p class="section-description">
+                    The theoretical foundation introduces six fundamental functions that together 
+                    provide a complete descriptive basis for physical and informational change.
+                </p>
+            </div>
+
+            <div class="functions-grid">
+                <div class="function-card">
+                    <div class="function-symbol">κ</div>
+                    <h4 class="function-name">Heat</h4>
+                    <p class="function-description">
+                        Pure magnitude without direction. Heat establishes that motion exists and in what 
+                        quantity, prior to any notion of direction, opposition, or persistence.
+                    </p>
+                </div>
+
+                <div class="function-card">
+                    <div class="function-symbol">±</div>
+                    <h4 class="function-name">Polarity</h4>
+                    <p class="function-description">
+                        Opposition without direction. Polarity partitions motion into mutually opposed 
+                        forms—positive and negative—without implying interaction or spatial relation.
+                    </p>
+                </div>
+
+                <div class="function-card">
+                    <div class="function-symbol">tκ</div>
+                    <h4 class="function-name">Existence</h4>
+                    <p class="function-description">
+                        Temporal instantiation. Existence determines whether motion is realized at a 
+                        given temporal index—the minimal condition for duration or causality.
+                    </p>
+                </div>
+
+                <div class="function-card">
+                    <div class="function-symbol">R</div>
+                    <h4 class="function-name">Righteousness</h4>
+                    <p class="function-description">
+                        Relational alignment. Righteousness evaluates motion relative to a structured 
+                        frame of reference. It measures correctness of position, not morality.
+                    </p>
+                </div>
+
+                <div class="function-card">
+                    <div class="function-symbol">Ω</div>
+                    <h4 class="function-name">Order</h4>
+                    <p class="function-description">
+                        Structural invariance. Order describes how motions relate to one another in 
+                        ways that are repeatable, compressible, and algebraically preservable.
+                    </p>
+                </div>
+
+                <div class="function-card">
+                    <div class="function-symbol">Δ</div>
+                    <h4 class="function-name">Movement</h4>
+                    <p class="function-description">
+                        Orientation and direction. Movement assigns directional differentiation to 
+                        structurally admissible relations, enabling spatial expression.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Architecture Section -->
+        <section id="architecture">
+            <div class="section-header">
+                <div class="section-label">Implementation</div>
+                <h2 class="section-title">The Core Loop</h2>
+                <p class="section-description">
+                    PBAI operates through a six-phase cycle driven by a prime directive: 
+                    <em>Grow κ through environmental information.</em>
+                </p>
+            </div>
+
+            <div class="architecture-flow">
+                <div class="arch-step">
+                    <div class="arch-number">1</div>
+                    <div class="arch-content">
+                        <h4>Observer</h4>
+                        <p>Receive input from environment; register existence of motion at the current temporal index.</p>
+                    </div>
+                </div>
+
+                <div class="arch-step">
+                    <div class="arch-number">2</div>
+                    <div class="arch-content">
+                        <h4>Believer</h4>
+                        <p>Store all information; maintain persistent belief state with uncertainty (memory in physics form).</p>
+                    </div>
+                </div>
+
+                <div class="arch-step">
+                    <div class="arch-number">3</div>
+                    <div class="arch-content">
+                        <h4>Valuator</h4>
+                        <p>Assess, correlate, and contrast observations into values; evaluate righteousness within the frame.</p>
+                    </div>
+                </div>
+
+                <div class="arch-step">
+                    <div class="arch-number">4</div>
+                    <div class="arch-content">
+                        <h4>Enumerator → Predictor → Scorer</h4>
+                        <p>Enumerate available choices, predict outcomes for each, and grade by entropy, constraints, and order.</p>
+                    </div>
+                </div>
+
+                <div class="arch-step">
+                    <div class="arch-number">5</div>
+                    <div class="arch-content">
+                        <h4>Chooser</h4>
+                        <p>Select action via middle-entropy rule—not greedy exploitation, not random exploration, but structural balance.</p>
+                    </div>
+                </div>
+
+                <div class="arch-step">
+                    <div class="arch-number">6</div>
+                    <div class="arch-content">
+                        <h4>Executor → Updater</h4>
+                        <p>Execute chosen action; compute prediction error and surprise; accumulate κ (heat growth).</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quote -->
+        <div class="quote-section">
+            <p class="quote-text">
+                The dominant paradigm treats intelligence as sophisticated curve-fitting. 
+                PBAI proposes that intelligence is structured motion.
+            </p>
+            <p class="quote-attribution">— Motion Calendar Framework</p>
+        </div>
+
+        <!-- Comparison Section -->
+        <section>
+            <div class="section-header">
+                <div class="section-label">Paradigm Shift</div>
+                <h2 class="section-title">A Different Foundation</h2>
+                <p class="section-description">
+                    The differences between PBAI and dominant AI paradigms are not incremental 
+                    improvements but categorical distinctions.
+                </p>
+            </div>
+
+            <div class="comparison-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Aspect</th>
+                            <th class="current">Current AI</th>
+                            <th class="pbai">PBAI</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Primitive</td>
+                            <td>Probability / Statistics</td>
+                            <td>Motion</td>
+                        </tr>
+                        <tr>
+                            <td>Goal</td>
+                            <td>Reward maximization</td>
+                            <td>Heat accumulation (κ)</td>
+                        </tr>
+                        <tr>
+                            <td>State</td>
+                            <td>Stateless (per inference)</td>
+                            <td>Persistent identity</td>
+                        </tr>
+                        <tr>
+                            <td>Decision Rule</td>
+                            <td>Exploit or explore</td>
+                            <td>Middle entropy</td>
+                        </tr>
+                        <tr>
+                            <td>Learning</td>
+                            <td>Parameter optimization</td>
+                            <td>Value and function growth</td>
+                        </tr>
+                        <tr>
+                            <td>Time</td>
+                            <td>Discrete steps</td>
+                            <td>Motion-scaled (tκ)</td>
+                        </tr>
+                        <tr>
+                            <td>Meaning</td>
+                            <td>Distributional similarity</td>
+                            <td>Ontological grounding</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Status Section -->
+        <section id="status">
+            <div class="section-header">
+                <div class="section-label">Development</div>
+                <h2 class="section-title">Current Status</h2>
+                <p class="section-description">
+                    PBAI is not ready for deployment. It is a research project with a working 
+                    prototype, mathematical framework, and philosophical foundation.
+                </p>
+            </div>
+
+            <div class="status-grid">
+                <div class="status-card">
+                    <h3>
+                        <svg viewBox="0 0 24 24" fill="none" stroke-width="2">
+                            <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                        </svg>
+                        What Exists
+                    </h3>
+                    <ul class="status-list">
+                        <li>Theoretical framework: Six papers establishing the Motion Calendar</li>
+                        <li>Mathematical formalization: Three-tier stratification with canonical forms</li>
+                        <li>Working prototype: Python implementation operating in test environments</li>
+                        <li>Architecture documentation: Module interfaces and packet structures</li>
+                    </ul>
+                </div>
+
+                <div class="status-card">
+                    <h3>
+                        <svg viewBox="0 0 24 24" fill="none" stroke-width="2">
+                            <path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                        </svg>
+                        What's Needed
+                    </h3>
+                    <ul class="status-list">
+                        <li>Extended environments for complex domain testing</li>
+                        <li>Scaling infrastructure for continuous states</li>
+                        <li>Rigorous comparison studies against existing methods</li>
+                        <li>Theoretical extensions for language and perception</li>
+                        <li>Community tools, documentation, and contribution paths</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section">
+            <h2 class="cta-title">Support Open Research</h2>
+            <p class="cta-description">
+                PBAI accepts donations rather than investment. Donors receive no equity—only the 
+                knowledge that they have supported foundational research that would not otherwise occur.
+            </p>
+            <div class="cta-buttons">
+                <a href="support.html" class="btn btn-primary">
+                    Support Development
+                </a>
+                <a href="https://github.com/Brickmii/Project-PBAI" target="_blank" class="btn btn-secondary">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                    </svg>
+                    Contribute Code
+                </a>
+                <a href="#" class="btn btn-secondary">
+                    Read the Whitepaper
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-logo">PBAI</div>
+        <p class="footer-tagline">Entropy is unavoidable. Structure is intentional.</p>
+        <div class="footer-links">
+            <a href="https://github.com/Brickmii/Project-PBAI" target="_blank">GitHub</a>
+            <a href="#">Whitepaper</a>
+            <a href="#">Motion Calendar</a>
+            <a href="#">PSystem Solutions</a>
+        </div>
+        <p class="footer-copy">© 2026 PSystem Solutions LLC. Open Source.</p>
+    </footer>
+
+    <!-- Motion Canvas Script -->
+    <script>
+        const canvas = document.getElementById('motion-canvas');
+        const ctx = canvas.getContext('2d');
+        
+        let particles = [];
+        let mouseX = 0;
+        let mouseY = 0;
+        
+        function resize() {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+        }
+        
+        function createParticles() {
+            particles = [];
+            const count = Math.floor((canvas.width * canvas.height) / 15000);
+            
+            for (let i = 0; i < count; i++) {
+                particles.push({
+                    x: Math.random() * canvas.width,
+                    y: Math.random() * canvas.height,
+                    vx: (Math.random() - 0.5) * 0.5,
+                    vy: (Math.random() - 0.5) * 0.5,
+                    radius: Math.random() * 2 + 1,
+                    alpha: Math.random() * 0.5 + 0.1,
+                    hue: Math.random() * 60 + 220 // Blue-purple range
+                });
+            }
+        }
+        
+        function animate() {
+            ctx.fillStyle = 'rgba(10, 10, 15, 0.1)';
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+            
+            particles.forEach((p, i) => {
+                // Update position
+                p.x += p.vx;
+                p.y += p.vy;
+                
+                // Wrap around edges
+                if (p.x < 0) p.x = canvas.width;
+                if (p.x > canvas.width) p.x = 0;
+                if (p.y < 0) p.y = canvas.height;
+                if (p.y > canvas.height) p.y = 0;
+                
+                // Draw particle
+                ctx.beginPath();
+                ctx.arc(p.x, p.y, p.radius, 0, Math.PI * 2);
+                ctx.fillStyle = `hsla(${p.hue}, 70%, 60%, ${p.alpha})`;
+                ctx.fill();
+                
+                // Draw connections
+                particles.slice(i + 1).forEach(p2 => {
+                    const dx = p.x - p2.x;
+                    const dy = p.y - p2.y;
+                    const dist = Math.sqrt(dx * dx + dy * dy);
+                    
+                    if (dist < 100) {
+                        ctx.beginPath();
+                        ctx.moveTo(p.x, p.y);
+                        ctx.lineTo(p2.x, p2.y);
+                        ctx.strokeStyle = `hsla(${p.hue}, 70%, 60%, ${0.1 * (1 - dist / 100)})`;
+                        ctx.stroke();
+                    }
+                });
+            });
+            
+            requestAnimationFrame(animate);
+        }
+        
+        window.addEventListener('resize', () => {
+            resize();
+            createParticles();
+        });
+        
+        document.addEventListener('mousemove', (e) => {
+            mouseX = e.clientX;
+            mouseY = e.clientY;
+        });
+        
+        resize();
+        createParticles();
+        animate();
+    </script>
+</body>
+</html>
