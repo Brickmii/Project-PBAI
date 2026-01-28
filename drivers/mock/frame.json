@@ -1,0 +1,28 @@
+{
+  "name": "mock",
+  "node": {
+    "id": "ede07467-60d5-4bc2-b684-baacffab8049",
+    "concept": "mock",
+    "position": "u",
+    "heat": 1.5278640450004204,
+    "polarity": 1,
+    "existence": "actual",
+    "righteousness": 1.0,
+    "order": 1,
+    "potential_units": 0,
+    "tags": [
+      "driver:mock"
+    ],
+    "frame": {
+      "origin": "mock",
+      "x_axis": null,
+      "y_axis": null,
+      "z_axis": null,
+      "axes": {}
+    }
+  },
+  "state_count": 0,
+  "motor_count": 0,
+  "plan_count": 0,
+  "saved_at": 1769480002.7768936
+}

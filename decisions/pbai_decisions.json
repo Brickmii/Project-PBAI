@@ -1,0 +1,168 @@
+{
+  "name": "pbai_decisions",
+  "choices": [
+    {
+      "timestamp": 1769531029.2718194,
+      "state_key": "decision_test_state",
+      "options": [
+        "action_a",
+        "action_b",
+        "action_c"
+      ],
+      "selected": "action_c",
+      "confidence": 0.0,
+      "heat": 0.18960712685520986,
+      "polarity": 1,
+      "existence_valid": true,
+      "righteousness": 1.0,
+      "order_count": 0,
+      "context": {},
+      "outcome": "success",
+      "success": true,
+      "heat_delta": 0.5
+    },
+    {
+      "timestamp": 1769531087.0577059,
+      "state_key": "decision_test_state",
+      "options": [
+        "action_a",
+        "action_b",
+        "action_c"
+      ],
+      "selected": "action_c",
+      "confidence": 0.0,
+      "heat": 0.17411273456411647,
+      "polarity": 1,
+      "existence_valid": true,
+      "righteousness": 1.0,
+      "order_count": 0,
+      "context": {},
+      "outcome": "success",
+      "success": true,
+      "heat_delta": 0.5
+    },
+    {
+      "timestamp": 1769531104.18577,
+      "state_key": "decision_test_state",
+      "options": [
+        "action_a",
+        "action_b",
+        "action_c"
+      ],
+      "selected": "action_a",
+      "confidence": 0.0,
+      "heat": 0.19391702873985822,
+      "polarity": 1,
+      "existence_valid": true,
+      "righteousness": 1.0,
+      "order_count": 0,
+      "context": {},
+      "outcome": "success",
+      "success": true,
+      "heat_delta": 0.5
+    },
+    {
+      "timestamp": 1769531130.984846,
+      "state_key": "decision_test_state",
+      "options": [
+        "action_a",
+        "action_b",
+        "action_c"
+      ],
+      "selected": "action_b",
+      "confidence": 0.0,
+      "heat": 0.1607653039045963,
+      "polarity": 1,
+      "existence_valid": true,
+      "righteousness": 1.0,
+      "order_count": 0,
+      "context": {},
+      "outcome": "success",
+      "success": true,
+      "heat_delta": 0.5
+    },
+    {
+      "timestamp": 1769531151.4847956,
+      "state_key": "decision_test_state",
+      "options": [
+        "action_a",
+        "action_b",
+        "action_c"
+      ],
+      "selected": "action_a",
+      "confidence": 0.0,
+      "heat": 0.12040828230950183,
+      "polarity": 1,
+      "existence_valid": true,
+      "righteousness": 1.0,
+      "order_count": 0,
+      "context": {},
+      "outcome": "success",
+      "success": true,
+      "heat_delta": 0.5
+    },
+    {
+      "timestamp": 1769531423.2513692,
+      "state_key": "decision_state",
+      "options": [
+        "action_a",
+        "action_b",
+        "action_c"
+      ],
+      "selected": "action_a",
+      "confidence": 0.0,
+      "heat": 0.21224700183752773,
+      "polarity": 1,
+      "existence_valid": true,
+      "righteousness": 1.0,
+      "order_count": 0,
+      "context": {},
+      "outcome": "success",
+      "success": true,
+      "heat_delta": 0.5
+    },
+    {
+      "timestamp": 1769531442.0811243,
+      "state_key": "decision_state",
+      "options": [
+        "action_a",
+        "action_b",
+        "action_c"
+      ],
+      "selected": "action_b",
+      "confidence": 0.0,
+      "heat": 0.2082786191781236,
+      "polarity": 1,
+      "existence_valid": true,
+      "righteousness": 1.0,
+      "order_count": 0,
+      "context": {},
+      "outcome": "success",
+      "success": true,
+      "heat_delta": 0.5
+    },
+    {
+      "timestamp": 1769532741.2117283,
+      "state_key": "decision_state",
+      "options": [
+        "action_a",
+        "action_b",
+        "action_c"
+      ],
+      "selected": "action_b",
+      "confidence": 0.0,
+      "heat": 0.21395473291897849,
+      "polarity": 1,
+      "existence_valid": true,
+      "righteousness": 1.0,
+      "order_count": 0,
+      "context": {},
+      "outcome": "success",
+      "success": true,
+      "heat_delta": 0.5
+    }
+  ],
+  "total_choices": 8,
+  "success_count": 8,
+  "saved_at": 1769532741.2127144
+}

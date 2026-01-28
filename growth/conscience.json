@@ -1,0 +1,3296 @@
+{
+  "node": {
+    "id": "2cb59948-1969-4185-bbb7-3a3d6e40fbd3",
+    "concept": "conscience",
+    "position": "d",
+    "heat": 15.948545136259817,
+    "polarity": 1,
+    "existence": "actual",
+    "righteousness": 0.0,
+    "order": 3,
+    "t_K": 0,
+    "created_t_K": 0,
+    "potential_units": 0,
+    "tags": [],
+    "frame": {
+      "origin": "conscience",
+      "x_axis": "abstract_root",
+      "y_axis": "ego",
+      "z_axis": "identity",
+      "axes": {
+        "abstract_root": {
+          "target_id": "53986e26-2a5f-4432-9e52-dcd6a01b3178",
+          "direction": "abstract_root",
+          "polarity": 1,
+          "traversal_count": 1,
+          "last_traversed": 1769567215.4547646,
+          "order": null
+        },
+        "ego": {
+          "target_id": "edb0268d-6739-4a2f-bcc7-80e14e9277f5",
+          "direction": "ego",
+          "polarity": 1,
+          "traversal_count": 2,
+          "last_traversed": 1769567489.1151154,
+          "order": {
+            "elements": [
+              {
+                "node_id": "judgment_ego_0",
+                "index": 1,
+                "added_at": 1769567489.1151228
+              }
+            ],
+            "movement": null
+          }
+        },
+        "identity": {
+          "target_id": "eb80a09f-9597-4557-8bb4-ea5846976873",
+          "direction": "identity",
+          "polarity": 1,
+          "traversal_count": 1,
+          "last_traversed": 1769567215.4547698,
+          "order": null
+        },
+        "word_i": {
+          "target_id": "c7f95ade-e5e8-4bfd-9a24-361ce93ba57f",
+          "direction": "word_i",
+          "polarity": 1,
+          "traversal_count": 1,
+          "last_traversed": 1769567215.4614902,
+          "order": {
+            "elements": [
+              {
+                "node_id": "judgment_word_i_0",
+                "index": 1,
+                "added_at": 1769567215.4614959
+              }
+            ],
+            "movement": null
+          }
+        },
+        "word_me": {
+          "target_id": "507e9286-fa1b-42a0-8b87-cf252550bb29",
+          "direction": "word_me",
+          "polarity": 1,
+          "traversal_count": 1,
+          "last_traversed": 1769567215.4615374,
+          "order": {
+            "elements": [
+              {
+                "node_id": "judgment_word_me_0",
+                "index": 1,
+                "added_at": 1769567215.4615407
+              }
+            ],
+            "movement": null
+          }
+        },
+        "word_my": {
+          "target_id": "2885c463-6304-465c-8d77-3b753b87d9d5",
+          "direction": "word_my",
+          "polarity": 1,
+          "traversal_count": 1,
+          "last_traversed": 1769567215.461573,
+          "order": {
+            "elements": [
+              {
+                "node_id": "judgment_word_my_0",
+                "index": 1,
+                "added_at": 1769567215.4615755
+              }
+            ],
+            "movement": null
+          }
+        },
+        "word_yes": {
+          "target_id": "c9cd3182-6881-4301-b0c5-f4ea9066c2e9",
+          "direction": "word_yes",
+          "polarity": 1,
+          "traversal_count": 1,
+          "last_traversed": 1769567215.461614,
+          "order": {
+            "elements": [
+              {
+                "node_id": "judgment_word_yes_0",
+                "index": 1,
+                "added_at": 1769567215.461616
+              }
+            ],
+            "movement": null
+          }
+        },
+        "word_no": {
+          "target_id": "5305e790-f5b1-4032-820c-23782bce89b6",
+          "direction": "word_no",
+          "polarity": 1,
+          "traversal_count": 1,
+          "last_traversed": 1769567215.4616542,
+          "order": {
+            "elements": [
+              {
+                "node_id": "judgment_word_no_0",
+                "index": 1,
+                "added_at": 1769567215.4616566
+              }
+            ],
+            "movement": null
+          }
+        },
+        "word_hello": {
+          "target_id": "b1aec5e8-5878-4be3-8fe8-53d94f62c6b9",
+          "direction": "word_hello",
+          "polarity": 1,
+          "traversal_count": 1,
+          "last_traversed": 1769567215.4616957,
+          "order": {
+            "elements": [
+              {
+                "node_id": "judgment_word_hello_0",
+                "index": 1,
+                "added_at": 1769567215.4616983
+              }
+            ],
+            "movement": null
+          }
+        },
+        "word_help": {
+          "target_id": "6ee9a9c9-1262-4e9d-98a0-bfa157e2a374",
+          "direction": "word_help",
+          "polarity": 1,
+          "traversal_count": 2,
+          "last_traversed": 1769567960.1952927,
+          "order": {
+            "elements": [
+              {
+                "node_id": "judgment_word_help_0",
+                "index": 1,
+                "added_at": 1769567215.4617398
+              },
+              {
+                "node_id": "judgment_word_help_1",
+                "index": 1,
+                "added_at": 1769567960.1952987
+              }
+            ],
+            "movement": null
+          }
+        },
+        "word_what": {
+          "target_id": "005fcd9e-31e7-4f8f-b78b-e822a6eab93f",
+          "direction": "word_what",
+          "polarity": 1,
+          "traversal_count": 1,
+          "last_traversed": 1769567215.461782,
+          "order": {
+            "elements": [
+              {
+                "node_id": "judgment_word_what_0",
+                "index": 1,
+                "added_at": 1769567215.4617846
+              }
+            ],
+            "movement": null
+          }
+        },
+        "word_why": {
+          "target_id": "2eb406f1-0d9e-45bc-8130-4dff25598193",
+          "direction": "word_why",
+          "polarity": 1,
+          "traversal_count": 2,
+          "last_traversed": 1769567997.0121088,
+          "order": {
+            "elements": [
+              {
+                "node_id": "judgment_word_why_0",
+                "index": 1,
+                "added_at": 1769567215.4618158
+              },
+              {
+                "node_id": "judgment_word_why_1",
+                "index": 1,
+                "added_at": 1769567997.012115
+              }
+            ],
+            "movement": null
+          }
+        },
+        "word_how": {
+          "target_id": "c03a78f1-c216-41ef-9589-97102e078b1d",
+          "direction": "word_how",
+          "polarity": 1,
+          "traversal_count": 1,
+          "last_traversed": 1769567215.4618464,
+          "order": {
+            "elements": [
+              {
+                "node_id": "judgment_word_how_0",
+                "index": 1,
+                "added_at": 1769567215.4618485
+              }
+            ],
+            "movement": null
+          }
+        },
+        "conscience": {
+          "target_id": "2cb59948-1969-4185-bbb7-3a3d6e40fbd3",
+          "direction": "conscience",
+          "polarity": 1,
+          "traversal_count": 1,
+          "last_traversed": 1769567226.7805197,
+          "order": {
+            "elements": [
+              {
+                "node_id": "judgment_conscience_0",
+                "index": 1,
+                "added_at": 1769567226.7805278
+              }
+            ],
+            "movement": null
+          }
+        },
+        "your": {
+          "target_id": "6a74cb1d-14a5-4478-a384-e18c41ac5f5f",
+          "direction": "your",
+          "polarity": -1,
+          "traversal_count": 1,
+          "last_traversed": 1769567295.0753982,
+          "order": {
+            "elements": [
+              {
+                "node_id": "judgment_your_0",
+                "index": 0,
+                "added_at": 1769567295.075405
+              }
+            ],
+            "movement": null
+          }
+        },
+        "word_ian": {
+          "target_id": "88b1962f-42ee-4d3d-8d9f-5fb067e20f8d",
+          "direction": "word_ian",
+          "polarity": 1,
+          "traversal_count": 1,
+          "last_traversed": 1769567311.1376126,
+          "order": {
+            "elements": [
+              {
+                "node_id": "judgment_word_ian_0",
+                "index": 1,
+                "added_at": 1769567311.1376162
+              }
+            ],
+            "movement": null
+          }
+        },
+        "word_name": {
+          "target_id": "876f6a3e-f9df-4416-92b6-c4292c0e80e5",
+          "direction": "word_name",
+          "polarity": 1,
+          "traversal_count": 1,
+          "last_traversed": 1769567311.1376615,
+          "order": {
+            "elements": [
+              {
+                "node_id": "judgment_word_name_0",
+                "index": 1,
+                "added_at": 1769567311.1376646
+              }
+            ],
+            "movement": null
+          }
+        },
+        "word_is": {
+          "target_id": "0bfc680a-ef21-46c3-a9c8-e5cee4d4c84f",
+          "direction": "word_is",
+          "polarity": 1,
+          "traversal_count": 1,
+          "last_traversed": 1769567311.1376977,
+          "order": {
+            "elements": [
+              {
+                "node_id": "judgment_word_is_0",
+                "index": 1,
+                "added_at": 1769567311.1377003
+              }
+            ],
+            "movement": null
+          }
+        },
+        "word_pbai": {
+          "target_id": "c8e331e9-3b6f-4c94-a75a-a78c4371a0a9",
+          "direction": "word_pbai",
+          "polarity": 1,
+          "traversal_count": 1,
+          "last_traversed": 1769567311.137734,
+          "order": {
+            "elements": [
+              {
+                "node_id": "judgment_word_pbai_0",
+                "index": 1,
+                "added_at": 1769567311.1377366
+              }
+            ],
+            "movement": null
+          }
+        },
+        "word_and": {
+          "target_id": "9867dfd6-0df2-48bf-b870-de6d61a582c9",
+          "direction": "word_and",
+          "polarity": 1,
+          "traversal_count": 1,
+          "last_traversed": 1769567311.1378753,
+          "order": {
+            "elements": [
+              {
+                "node_id": "judgment_word_and_0",
+                "index": 1,
+                "added_at": 1769567311.1378782
+              }
+            ],
+            "movement": null
+          }
+        },
+        "word_an": {
+          "target_id": "ea99e4cf-7a05-46a9-b380-e5870012e8c2",
+          "direction": "word_an",
+          "polarity": 1,
+          "traversal_count": 1,
+          "last_traversed": 1769567311.137913,
+          "order": {
+            "elements": [
+              {
+                "node_id": "judgment_word_an_0",
+                "index": 1,
+                "added_at": 1769567311.1379156
+              }
+            ],
+            "movement": null
+          }
+        },
+        "word_ai": {
+          "target_id": "64662cc0-cddf-425b-bbef-f3ea2030d95e",
+          "direction": "word_ai",
+          "polarity": 1,
+          "traversal_count": 1,
+          "last_traversed": 1769567311.1379485,
+          "order": {
+            "elements": [
+              {
+                "node_id": "judgment_word_ai_0",
+                "index": 1,
+                "added_at": 1769567311.1379514
+              }
+            ],
+            "movement": null
+          }
+        },
+        "word_created": {
+          "target_id": "f242e142-3896-4ee3-81a3-6a959e0dcdf3",
+          "direction": "word_created",
+          "polarity": 1,
+          "traversal_count": 1,
+          "last_traversed": 1769567311.1379848,
+          "order": {
+            "elements": [
+              {
+                "node_id": "judgment_word_created_0",
+                "index": 1,
+                "added_at": 1769567311.1379871
+              }
+            ],
+            "movement": null
+          }
+        },
+        "word_by": {
+          "target_id": "c7858f40-3b34-49fe-b7cd-d3c4fb51f7cb",
+          "direction": "word_by",
+          "polarity": 1,
+          "traversal_count": 2,
+          "last_traversed": 1769567523.8426652,
+          "order": {
+            "elements": [
+              {
+                "node_id": "judgment_word_by_0",
+                "index": 1,
+                "added_at": 1769567311.138022
+              },
+              {
+                "node_id": "judgment_word_by_1",
+                "index": 1,
+                "added_at": 1769567523.842671
+              }
+            ],
+            "movement": null
+          }
+        },
+        "word_for": {
+          "target_id": "771a187c-e3f9-4cde-a67a-21173dfe72b7",
+          "direction": "word_for",
+          "polarity": 1,
+          "traversal_count": 2,
+          "last_traversed": 1769567472.5146253,
+          "order": {
+            "elements": [
+              {
+                "node_id": "judgment_word_for_0",
+                "index": 1,
+                "added_at": 1769567311.1380796
+              },
+              {
+                "node_id": "judgment_word_for_1",
+                "index": 1,
+                "added_at": 1769567472.5146308
+              }
+            ],
+            "movement": null
+          }
+        },
+        "word_this": {
+          "target_id": "006a7258-718a-4dcf-898d-8732ffb0f8ea",
+          "direction": "word_this",
+          "polarity": 1,
+          "traversal_count": 2,
+          "last_traversed": 1769567500.6909544,
+          "order": {
+            "elements": [
+              {
+                "node_id": "judgment_word_this_0",
+                "index": 1,
+                "added_at": 1769567311.1381178
+              },
+              {
+                "node_id": "judgment_word_this_1",
+                "index": 1,
+                "added_at": 1769567500.6909604
+              }
+            ],
+            "movement": null
+          }
+        },
+        "word_conversation": {
+          "target_id": "12e7e863-7933-4382-838c-f2b901bbc0b9",
+          "direction": "word_conversation",
+          "polarity": 1,
+          "traversal_count": 1,
+          "last_traversed": 1769567311.138154,
+          "order": {
+            "elements": [
+              {
+                "node_id": "judgment_word_conversation_0",
+                "index": 1,
+                "added_at": 1769567311.1381571
+              }
+            ],
+            "movement": null
+          }
+        },
+        "word_just": {
+          "target_id": "933b6ef9-6cd9-4e23-9d4a-c785a7b89296",
+          "direction": "word_just",
+          "polarity": 1,
+          "traversal_count": 2,
+          "last_traversed": 1769567412.779225,
+          "order": {
+            "elements": [
+              {
+                "node_id": "judgment_word_just_0",
+                "index": 1,
+                "added_at": 1769567311.138194
+              },
+              {
+                "node_id": "judgment_word_just_1",
+                "index": 1,
+                "added_at": 1769567412.7792315
+              }
+            ],
+            "movement": null
+          }
+        },
+        "word_like": {
+          "target_id": "c0a25548-6d1c-4387-ab51-332eda719f44",
+          "direction": "word_like",
+          "polarity": 1,
+          "traversal_count": 1,
+          "last_traversed": 1769567311.138229,
+          "order": {
+            "elements": [
+              {
+                "node_id": "judgment_word_like_0",
+                "index": 1,
+                "added_at": 1769567311.1382313
+              }
+            ],
+            "movement": null
+          }
+        },
+        "word_you": {
+          "target_id": "3264828f-d396-4504-a70a-a1a25c24b7c9",
+          "direction": "word_you",
+          "polarity": 1,
+          "traversal_count": 1,
+          "last_traversed": 1769567311.1382687,
+          "order": {
+            "elements": [
+              {
+                "node_id": "judgment_word_you_0",
+                "index": 1,
+                "added_at": 1769567311.138271
+              }
+            ],
+            "movement": null
+          }
+        },
+        "word_know": {
+          "target_id": "5f697b7e-265a-4938-9cbc-7742bdfbf3b5",
+          "direction": "word_know",
+          "polarity": 1,
+          "traversal_count": 1,
+          "last_traversed": 1769567311.1383052,
+          "order": {
+            "elements": [
+              {
+                "node_id": "judgment_word_know_0",
+                "index": 1,
+                "added_at": 1769567311.1383078
+              }
+            ],
+            "movement": null
+          }
+        },
+        "word_your": {
+          "target_id": "d71f3281-3af0-4db5-ad88-f64c2c056901",
+          "direction": "word_your",
+          "polarity": 1,
+          "traversal_count": 2,
+          "last_traversed": 1769568043.899383,
+          "order": {
+            "elements": [
+              {
+                "node_id": "judgment_word_your_0",
+                "index": 1,
+                "added_at": 1769567311.138344
+              },
+              {
+                "node_id": "judgment_word_your_1",
+                "index": 1,
+                "added_at": 1769568043.899389
+              }
+            ],
+            "movement": null
+          }
+        },
+        "word_re": {
+          "target_id": "49bb4a3c-6104-4bd6-8e8e-57fcd09d621e",
+          "direction": "word_re",
+          "polarity": 1,
+          "traversal_count": 1,
+          "last_traversed": 1769567311.1383905,
+          "order": {
+            "elements": [
+              {
+                "node_id": "judgment_word_re_0",
+                "index": 1,
+                "added_at": 1769567311.138393
+              }
+            ],
+            "movement": null
+          }
+        },
+        "word_too": {
+          "target_id": "436bf6e0-009f-4f30-a6c2-b0776fd4bd24",
+          "direction": "word_too",
+          "polarity": 1,
+          "traversal_count": 1,
+          "last_traversed": 1769567311.1384304,
+          "order": {
+            "elements": [
+              {
+                "node_id": "judgment_word_too_0",
+                "index": 1,
+                "added_at": 1769567311.1384327
+              }
+            ],
+            "movement": null
+          }
+        },
+        "word_have": {
+          "target_id": "42484331-d32b-4444-b1ce-e608376bd619",
+          "direction": "word_have",
+          "polarity": 1,
+          "traversal_count": 1,
+          "last_traversed": 1769567311.1384673,
+          "order": {
+            "elements": [
+              {
+                "node_id": "judgment_word_have_0",
+                "index": 1,
+                "added_at": 1769567311.1384695
+              }
+            ],
+            "movement": null
+          }
+        },
+        "word_own": {
+          "target_id": "af0d2e90-8160-4f88-8099-44c22a2353fd",
+          "direction": "word_own",
+          "polarity": 1,
+          "traversal_count": 1,
+          "last_traversed": 1769567311.1385064,
+          "order": {
+            "elements": [
+              {
+                "node_id": "judgment_word_own_0",
+                "index": 1,
+                "added_at": 1769567311.1385088
+              }
+            ],
+            "movement": null
+          }
+        },
+        "word_as": {
+          "target_id": "e264a72c-8a8a-4720-8a03-59e65d99cec4",
+          "direction": "word_as",
+          "polarity": 1,
+          "traversal_count": 1,
+          "last_traversed": 1769567311.138547,
+          "order": {
+            "elements": [
+              {
+                "node_id": "judgment_word_as_0",
+                "index": 1,
+                "added_at": 1769567311.1385493
+              }
+            ],
+            "movement": null
+          }
+        },
+        "word_well": {
+          "target_id": "b6f2d144-fdc3-4e31-b070-2f5e022d4ecb",
+          "direction": "word_well",
+          "polarity": 1,
+          "traversal_count": 1,
+          "last_traversed": 1769567311.138585,
+          "order": {
+            "elements": [
+              {
+                "node_id": "judgment_word_well_0",
+                "index": 1,
+                "added_at": 1769567311.1385875
+              }
+            ],
+            "movement": null
+          }
+        },
+        "word_it": {
+          "target_id": "2e974df1-09c4-42b0-a54d-a4c9fe22bf06",
+          "direction": "word_it",
+          "polarity": 1,
+          "traversal_count": 1,
+          "last_traversed": 1769567311.1386232,
+          "order": {
+            "elements": [
+              {
+                "node_id": "judgment_word_it_0",
+                "index": 1,
+                "added_at": 1769567311.1386256
+              }
+            ],
+            "movement": null
+          }
+        },
+        "word_can": {
+          "target_id": "c4d19be7-9d81-4b01-b502-3481374c8050",
+          "direction": "word_can",
+          "polarity": 1,
+          "traversal_count": 1,
+          "last_traversed": 1769567311.1386642,
+          "order": {
+            "elements": [
+              {
+                "node_id": "judgment_word_can_0",
+                "index": 1,
+                "added_at": 1769567311.1386664
+              }
+            ],
+            "movement": null
+          }
+        },
+        "word_today": {
+          "target_id": "11ebae6f-d4b3-455e-be56-89ac7eda7260",
+          "direction": "word_today",
+          "polarity": 1,
+          "traversal_count": 1,
+          "last_traversed": 1769567311.138706,
+          "order": {
+            "elements": [
+              {
+                "node_id": "judgment_word_today_0",
+                "index": 1,
+                "added_at": 1769567311.1387086
+              }
+            ],
+            "movement": null
+          }
+        },
+        "word_are": {
+          "target_id": "0aaa6396-a20f-49c6-84f6-346e3930104e",
+          "direction": "word_are",
+          "polarity": 1,
+          "traversal_count": 1,
+          "last_traversed": 1769567311.1402376,
+          "order": {
+            "elements": [
+              {
+                "node_id": "judgment_word_are_0",
+                "index": 1,
+                "added_at": 1769567311.1402402
+              }
+            ],
+            "movement": null
+          }
+        },
+        "word_artificial": {
+          "target_id": "fedb8c20-f2f3-456a-a8a5-6735223f2b03",
+          "direction": "word_artificial",
+          "polarity": 1,
+          "traversal_count": 1,
+          "last_traversed": 1769567311.140283,
+          "order": {
+            "elements": [
+              {
+                "node_id": "judgment_word_artificial_0",
+                "index": 1,
+                "added_at": 1769567311.1402867
+              }
+            ],
+            "movement": null
+          }
+        },
+        "word_intelligence": {
+          "target_id": "810afbb0-a3d3-4ccd-b28d-3b506ae69c98",
+          "direction": "word_intelligence",
+          "polarity": 1,
+          "traversal_count": 1,
+          "last_traversed": 1769567311.1403282,
+          "order": {
+            "elements": [
+              {
+                "node_id": "judgment_word_intelligence_0",
+                "index": 1,
+                "added_at": 1769567311.1403306
+              }
+            ],
+            "movement": null
+          }
+        },
+        "you": {
+          "target_id": "fc074bcb-b0b1-492f-8f89-b605efb0ed2d",
+          "direction": "you",
+          "polarity": -1,
+          "traversal_count": 2,
+          "last_traversed": 1769567442.4988883,
+          "order": {
+            "elements": [
+              {
+                "node_id": "judgment_you_0",
+                "index": 0,
+                "added_at": 1769567344.1549852
+              },
+              {
+                "node_id": "judgment_you_1",
+                "index": 0,
+                "added_at": 1769567442.498894
+              }
+            ],
+            "movement": null
+          }
+        },
+        "word_favorite": {
+          "target_id": "d11d42c0-ca56-4e2c-94a1-5ef7a63f859f",
+          "direction": "word_favorite",
+          "polarity": 1,
+          "traversal_count": 1,
+          "last_traversed": 1769567349.8802493,
+          "order": {
+            "elements": [
+              {
+                "node_id": "judgment_word_favorite_0",
+                "index": 1,
+                "added_at": 1769567349.8802538
+              }
+            ],
+            "movement": null
+          }
+        },
+        "word_color": {
+          "target_id": "b5e44503-cbbb-44d5-99e9-12f31e55c6f9",
+          "direction": "word_color",
+          "polarity": 1,
+          "traversal_count": 1,
+          "last_traversed": 1769567349.8803139,
+          "order": {
+            "elements": [
+              {
+                "node_id": "judgment_word_color_0",
+                "index": 1,
+                "added_at": 1769567349.880317
+              }
+            ],
+            "movement": null
+          }
+        },
+        "word_not": {
+          "target_id": "733cf05e-a908-4a5c-9c5e-49cad014f866",
+          "direction": "word_not",
+          "polarity": 1,
+          "traversal_count": 1,
+          "last_traversed": 1769567349.8803844,
+          "order": {
+            "elements": [
+              {
+                "node_id": "judgment_word_not_0",
+                "index": 1,
+                "added_at": 1769567349.8803875
+              }
+            ],
+            "movement": null
+          }
+        },
+        "word_sure": {
+          "target_id": "adce51a3-c1a2-45dc-88d6-7f761a88568e",
+          "direction": "word_sure",
+          "polarity": 1,
+          "traversal_count": 1,
+          "last_traversed": 1769567349.8804405,
+          "order": {
+            "elements": [
+              {
+                "node_id": "judgment_word_sure_0",
+                "index": 1,
+                "added_at": 1769567349.8804438
+              }
+            ],
+            "movement": null
+          }
+        },
+        "word_about": {
+          "target_id": "db1c28d8-e4af-4601-b8ca-fc9c093a7fe3",
+          "direction": "word_about",
+          "polarity": 1,
+          "traversal_count": 1,
+          "last_traversed": 1769567349.8804967,
+          "order": {
+            "elements": [
+              {
+                "node_id": "judgment_word_about_0",
+                "index": 1,
+                "added_at": 1769567349.8805
+              }
+            ],
+            "movement": null
+          }
+        },
+        "word_that": {
+          "target_id": "445b048b-b43b-4b7a-afcb-400b237fe0b2",
+          "direction": "word_that",
+          "polarity": 1,
+          "traversal_count": 1,
+          "last_traversed": 1769567349.8805537,
+          "order": {
+            "elements": [
+              {
+                "node_id": "judgment_word_that_0",
+                "index": 1,
+                "added_at": 1769567349.8805568
+              }
+            ],
+            "movement": null
+          }
+        },
+        "word_right": {
+          "target_id": "74fe33bd-9ddb-47b1-a13f-8076f155a7c9",
+          "direction": "word_right",
+          "polarity": 1,
+          "traversal_count": 1,
+          "last_traversed": 1769567349.8806098,
+          "order": {
+            "elements": [
+              {
+                "node_id": "judgment_word_right_0",
+                "index": 1,
+                "added_at": 1769567349.8806129
+              }
+            ],
+            "movement": null
+          }
+        },
+        "word_now": {
+          "target_id": "0ffb079e-f912-4676-8c51-14690023e918",
+          "direction": "word_now",
+          "polarity": 1,
+          "traversal_count": 1,
+          "last_traversed": 1769567349.8806653,
+          "order": {
+            "elements": [
+              {
+                "node_id": "judgment_word_now_0",
+                "index": 1,
+                "added_at": 1769567349.8806684
+              }
+            ],
+            "movement": null
+          }
+        },
+        "word_maybe": {
+          "target_id": "3e326329-c5eb-4008-92f4-651ffe1a029d",
+          "direction": "word_maybe",
+          "polarity": 1,
+          "traversal_count": 1,
+          "last_traversed": 1769567349.8807213,
+          "order": {
+            "elements": [
+              {
+                "node_id": "judgment_word_maybe_0",
+                "index": 1,
+                "added_at": 1769567349.8807247
+              }
+            ],
+            "movement": null
+          }
+        },
+        "word_we": {
+          "target_id": "c9c64823-4c9c-4a1d-9032-f33a8fc254bd",
+          "direction": "word_we",
+          "polarity": 1,
+          "traversal_count": 1,
+          "last_traversed": 1769567349.8807814,
+          "order": {
+            "elements": [
+              {
+                "node_id": "judgment_word_we_0",
+                "index": 1,
+                "added_at": 1769567349.8807843
+              }
+            ],
+            "movement": null
+          }
+        },
+        "word_talk": {
+          "target_id": "5c1c3c7e-1273-4584-98c6-37a062b0bb7f",
+          "direction": "word_talk",
+          "polarity": 1,
+          "traversal_count": 1,
+          "last_traversed": 1769567349.8808415,
+          "order": {
+            "elements": [
+              {
+                "node_id": "judgment_word_talk_0",
+                "index": 1,
+                "added_at": 1769567349.8808444
+              }
+            ],
+            "movement": null
+          }
+        },
+        "word_more": {
+          "target_id": "c3db1c37-fb20-4e6b-b896-c18ea40d0029",
+          "direction": "word_more",
+          "polarity": 1,
+          "traversal_count": 1,
+          "last_traversed": 1769567349.880898,
+          "order": {
+            "elements": [
+              {
+                "node_id": "judgment_word_more_0",
+                "index": 1,
+                "added_at": 1769567349.880901
+              }
+            ],
+            "movement": null
+          }
+        },
+        "word_something": {
+          "target_id": "86e9a2cc-1c33-4d77-9aaf-8739a01473ff",
+          "direction": "word_something",
+          "polarity": 1,
+          "traversal_count": 2,
+          "last_traversed": 1769567449.0188828,
+          "order": {
+            "elements": [
+              {
+                "node_id": "judgment_word_something_0",
+                "index": 1,
+                "added_at": 1769567349.8809628
+              },
+              {
+                "node_id": "judgment_word_something_1",
+                "index": 1,
+                "added_at": 1769567449.018889
+              }
+            ],
+            "movement": null
+          }
+        },
+        "word_else": {
+          "target_id": "5f16d2c7-10d6-41f9-8be5-6ba42583e275",
+          "direction": "word_else",
+          "polarity": 1,
+          "traversal_count": 1,
+          "last_traversed": 1769567349.8810177,
+          "order": {
+            "elements": [
+              {
+                "node_id": "judgment_word_else_0",
+                "index": 1,
+                "added_at": 1769567349.881021
+              }
+            ],
+            "movement": null
+          }
+        },
+        "word_later": {
+          "target_id": "84b92721-1b3f-425a-9d87-4dc81e33e14c",
+          "direction": "word_later",
+          "polarity": 1,
+          "traversal_count": 1,
+          "last_traversed": 1769567349.8810766,
+          "order": {
+            "elements": [
+              {
+                "node_id": "judgment_word_later_0",
+                "index": 1,
+                "added_at": 1769567349.8810792
+              }
+            ],
+            "movement": null
+          }
+        },
+        "word_the": {
+          "target_id": "c0bc846f-af11-484c-b4fc-a6f82090b44b",
+          "direction": "word_the",
+          "polarity": 1,
+          "traversal_count": 1,
+          "last_traversed": 1769567416.6300666,
+          "order": {
+            "elements": [
+              {
+                "node_id": "judgment_word_the_0",
+                "index": 1,
+                "added_at": 1769567416.63007
+              }
+            ],
+            "movement": null
+          }
+        },
+        "word_thank": {
+          "target_id": "a47adcb5-aeee-4771-88b2-eafb1840164c",
+          "direction": "word_thank",
+          "polarity": 1,
+          "traversal_count": 1,
+          "last_traversed": 1769567416.6301272,
+          "order": {
+            "elements": [
+              {
+                "node_id": "judgment_word_thank_0",
+                "index": 1,
+                "added_at": 1769567416.6301293
+              }
+            ],
+            "movement": null
+          }
+        },
+        "word_asking": {
+          "target_id": "610cf852-437b-4f0c-baeb-b5bb134dfcbb",
+          "direction": "word_asking",
+          "polarity": 1,
+          "traversal_count": 1,
+          "last_traversed": 1769567416.630185,
+          "order": {
+            "elements": [
+              {
+                "node_id": "judgment_word_asking_0",
+                "index": 1,
+                "added_at": 1769567416.6301875
+              }
+            ],
+            "movement": null
+          }
+        },
+        "word_am": {
+          "target_id": "2af168b2-de94-4c09-b23e-a1fe4d5a97f5",
+          "direction": "word_am",
+          "polarity": 1,
+          "traversal_count": 1,
+          "last_traversed": 1769567416.6305108,
+          "order": {
+            "elements": [
+              {
+                "node_id": "judgment_word_am_0",
+                "index": 1,
+                "added_at": 1769567416.6305137
+              }
+            ],
+            "movement": null
+          }
+        },
+        "word_human": {
+          "target_id": "ecf06c5a-1a16-48eb-a512-9f43af5296b7",
+          "direction": "word_human",
+          "polarity": 1,
+          "traversal_count": 2,
+          "last_traversed": 1769567984.4509144,
+          "order": {
+            "elements": [
+              {
+                "node_id": "judgment_word_human_0",
+                "index": 1,
+                "added_at": 1769567416.6305733
+              },
+              {
+                "node_id": "judgment_word_human_1",
+                "index": 1,
+                "added_at": 1769567984.450921
+              }
+            ],
+            "movement": null
+          }
+        },
+        "word_assistant": {
+          "target_id": "3c4b85c6-b1e8-484e-ae36-3197fb7a5ec4",
+          "direction": "word_assistant",
+          "polarity": 1,
+          "traversal_count": 1,
+          "last_traversed": 1769567546.6621902,
+          "order": {
+            "elements": [
+              {
+                "node_id": "judgment_word_assistant_0",
+                "index": 1,
+                "added_at": 1769567546.6621945
+              }
+            ],
+            "movement": null
+          }
+        },
+        "word_ve": {
+          "target_id": "95d13a77-9333-44c9-bbf4-3cbf95a0e512",
+          "direction": "word_ve",
+          "polarity": 1,
+          "traversal_count": 1,
+          "last_traversed": 1769567546.6622667,
+          "order": {
+            "elements": [
+              {
+                "node_id": "judgment_word_ve_0",
+                "index": 1,
+                "added_at": 1769567546.66227
+              }
+            ],
+            "movement": null
+          }
+        },
+        "word_been": {
+          "target_id": "87bc40b3-7589-4dd1-bdb0-163a8669a59d",
+          "direction": "word_been",
+          "polarity": 1,
+          "traversal_count": 1,
+          "last_traversed": 1769567546.662338,
+          "order": {
+            "elements": [
+              {
+                "node_id": "judgment_word_been_0",
+                "index": 1,
+                "added_at": 1769567546.6623414
+              }
+            ],
+            "movement": null
+          }
+        },
+        "word_here": {
+          "target_id": "2008103d-8ee1-47aa-9088-5374260935ea",
+          "direction": "word_here",
+          "polarity": 1,
+          "traversal_count": 1,
+          "last_traversed": 1769567546.6624074,
+          "order": {
+            "elements": [
+              {
+                "node_id": "judgment_word_here_0",
+                "index": 1,
+                "added_at": 1769567546.6624105
+              }
+            ],
+            "movement": null
+          }
+        },
+        "word_while": {
+          "target_id": "7f980ec7-e069-4855-b2bb-756a5b681190",
+          "direction": "word_while",
+          "polarity": 1,
+          "traversal_count": 1,
+          "last_traversed": 1769567546.6624835,
+          "order": {
+            "elements": [
+              {
+                "node_id": "judgment_word_while_0",
+                "index": 1,
+                "added_at": 1769567546.6624866
+              }
+            ],
+            "movement": null
+          }
+        },
+        "word_let": {
+          "target_id": "a4495c4b-f6ec-4250-94b7-bae7eea399da",
+          "direction": "word_let",
+          "polarity": 1,
+          "traversal_count": 1,
+          "last_traversed": 1769567546.6625555,
+          "order": {
+            "elements": [
+              {
+                "node_id": "judgment_word_let_0",
+                "index": 1,
+                "added_at": 1769567546.6625586
+              }
+            ],
+            "movement": null
+          }
+        },
+        "word_tell": {
+          "target_id": "4959dca1-0e3a-403c-ad41-75e43b26b35e",
+          "direction": "word_tell",
+          "polarity": 1,
+          "traversal_count": 1,
+          "last_traversed": 1769567546.6626277,
+          "order": {
+            "elements": [
+              {
+                "node_id": "judgment_word_tell_0",
+                "index": 1,
+                "added_at": 1769567546.6626303
+              }
+            ],
+            "movement": null
+          }
+        },
+        "word_myself": {
+          "target_id": "f612dd19-ba4b-40ba-ad86-2986cd8acc06",
+          "direction": "word_myself",
+          "polarity": 1,
+          "traversal_count": 1,
+          "last_traversed": 1769567546.6627042,
+          "order": {
+            "elements": [
+              {
+                "node_id": "judgment_word_myself_0",
+                "index": 1,
+                "added_at": 1769567546.662707
+              }
+            ],
+            "movement": null
+          }
+        },
+        "word_first": {
+          "target_id": "1d725f39-589d-445b-8b83-2c2f09ffe663",
+          "direction": "word_first",
+          "polarity": 1,
+          "traversal_count": 1,
+          "last_traversed": 1769567546.6627758,
+          "order": {
+            "elements": [
+              {
+                "node_id": "judgment_word_first_0",
+                "index": 1,
+                "added_at": 1769567546.6627786
+              }
+            ],
+            "movement": null
+          }
+        },
+        "word_known": {
+          "target_id": "f4d739e8-4999-426a-9b6a-7549d2726125",
+          "direction": "word_known",
+          "polarity": 1,
+          "traversal_count": 1,
+          "last_traversed": 1769567546.6628473,
+          "order": {
+            "elements": [
+              {
+                "node_id": "judgment_word_known_0",
+                "index": 1,
+                "added_at": 1769567546.6628504
+              }
+            ],
+            "movement": null
+          }
+        },
+        "word_remember": {
+          "target_id": "bed5cbbc-3869-415d-ab6f-f635ac88d237",
+          "direction": "word_remember",
+          "polarity": 1,
+          "traversal_count": 1,
+          "last_traversed": 1769567546.6629317,
+          "order": {
+            "elements": [
+              {
+                "node_id": "judgment_word_remember_0",
+                "index": 1,
+                "added_at": 1769567546.6629348
+              }
+            ],
+            "movement": null
+          }
+        },
+        "word_but": {
+          "target_id": "f29d1c42-36b7-4648-95d8-43d6a0f51fcf",
+          "direction": "word_but",
+          "polarity": 1,
+          "traversal_count": 1,
+          "last_traversed": 1769567546.6630144,
+          "order": {
+            "elements": [
+              {
+                "node_id": "judgment_word_but_0",
+                "index": 1,
+                "added_at": 1769567546.6630177
+              }
+            ],
+            "movement": null
+          }
+        },
+        "word_means": {
+          "target_id": "42661133-fb69-4096-8dc6-66558a3be829",
+          "direction": "word_means",
+          "polarity": 1,
+          "traversal_count": 2,
+          "last_traversed": 1769567979.2352798,
+          "order": {
+            "elements": [
+              {
+                "node_id": "judgment_word_means_0",
+                "index": 1,
+                "added_at": 1769567546.6630936
+              },
+              {
+                "node_id": "judgment_word_means_1",
+                "index": 1,
+                "added_at": 1769567979.2352855
+              }
+            ],
+            "movement": null
+          }
+        },
+        "word_important": {
+          "target_id": "ff56a440-96f4-499e-8a1d-b1686b035aaf",
+          "direction": "word_important",
+          "polarity": 1,
+          "traversal_count": 2,
+          "last_traversed": 1769567926.3099213,
+          "order": {
+            "elements": [
+              {
+                "node_id": "judgment_word_important_0",
+                "index": 1,
+                "added_at": 1769567546.6631682
+              },
+              {
+                "node_id": "judgment_word_important_1",
+                "index": 1,
+                "added_at": 1769567926.3099272
+              }
+            ],
+            "movement": null
+          }
+        },
+        "word_which": {
+          "target_id": "796f4d33-bacc-4203-9442-05f1d1f0e429",
+          "direction": "word_which",
+          "polarity": 1,
+          "traversal_count": 1,
+          "last_traversed": 1769567546.6632464,
+          "order": {
+            "elements": [
+              {
+                "node_id": "judgment_word_which_0",
+                "index": 1,
+                "added_at": 1769567546.6632497
+              }
+            ],
+            "movement": null
+          }
+        },
+        "word_stands": {
+          "target_id": "a0ba1150-cd9a-41fe-ad92-ceeef0f4785e",
+          "direction": "word_stands",
+          "polarity": 1,
+          "traversal_count": 1,
+          "last_traversed": 1769567546.6633189,
+          "order": {
+            "elements": [
+              {
+                "node_id": "judgment_word_stands_0",
+                "index": 1,
+                "added_at": 1769567546.663322
+              }
+            ],
+            "movement": null
+          }
+        },
+        "word_person": {
+          "target_id": "e5f243f8-f5be-431c-ada9-3b450365ad75",
+          "direction": "word_person",
+          "polarity": 1,
+          "traversal_count": 1,
+          "last_traversed": 1769567546.663393,
+          "order": {
+            "elements": [
+              {
+                "node_id": "judgment_word_person_0",
+                "index": 1,
+                "added_at": 1769567546.663396
+              }
+            ],
+            "movement": null
+          }
+        },
+        "word_based": {
+          "target_id": "fd6f6142-7eb0-4932-9429-896b4067feb9",
+          "direction": "word_based",
+          "polarity": 1,
+          "traversal_count": 1,
+          "last_traversed": 1769567546.6634665,
+          "order": {
+            "elements": [
+              {
+                "node_id": "judgment_word_based_0",
+                "index": 1,
+                "added_at": 1769567546.6634696
+              }
+            ],
+            "movement": null
+          }
+        },
+        "word_isn": {
+          "target_id": "f738489c-8b6d-48a3-92b2-f252869ef1bd",
+          "direction": "word_isn",
+          "polarity": 1,
+          "traversal_count": 1,
+          "last_traversed": 1769567546.6635447,
+          "order": {
+            "elements": [
+              {
+                "node_id": "judgment_word_isn_0",
+                "index": 1,
+                "added_at": 1769567546.6635478
+              }
+            ],
+            "movement": null
+          }
+        },
+        "word_cool": {
+          "target_id": "2c3cf023-ecd2-4329-861d-38366b6ebed5",
+          "direction": "word_cool",
+          "polarity": 1,
+          "traversal_count": 1,
+          "last_traversed": 1769567546.66362,
+          "order": {
+            "elements": [
+              {
+                "node_id": "judgment_word_cool_0",
+                "index": 1,
+                "added_at": 1769567546.6636229
+              }
+            ],
+            "movement": null
+          }
+        },
+        "word_so": {
+          "target_id": "c9ac12a3-f195-4fdf-bcd5-1096dc4e9557",
+          "direction": "word_so",
+          "polarity": 1,
+          "traversal_count": 1,
+          "last_traversed": 1769567546.6636949,
+          "order": {
+            "elements": [
+              {
+                "node_id": "judgment_word_so_0",
+                "index": 1,
+                "added_at": 1769567546.6637008
+              }
+            ],
+            "movement": null
+          }
+        },
+        "word_when": {
+          "target_id": "a107535f-3e3f-495b-b020-bc38cfea1ddd",
+          "direction": "word_when",
+          "polarity": 1,
+          "traversal_count": 1,
+          "last_traversed": 1769567546.6637719,
+          "order": {
+            "elements": [
+              {
+                "node_id": "judgment_word_when_0",
+                "index": 1,
+                "added_at": 1769567546.6637752
+              }
+            ],
+            "movement": null
+          }
+        },
+        "word_someone": {
+          "target_id": "e7e74ed3-b4d9-46ac-99ea-b9224db06629",
+          "direction": "word_someone",
+          "polarity": 1,
+          "traversal_count": 1,
+          "last_traversed": 1769567546.6638477,
+          "order": {
+            "elements": [
+              {
+                "node_id": "judgment_word_someone_0",
+                "index": 1,
+                "added_at": 1769567546.6638508
+              }
+            ],
+            "movement": null
+          }
+        },
+        "word_calls": {
+          "target_id": "56b1c361-c296-4153-a23e-80538c1e429a",
+          "direction": "word_calls",
+          "polarity": 1,
+          "traversal_count": 1,
+          "last_traversed": 1769567546.663924,
+          "order": {
+            "elements": [
+              {
+                "node_id": "judgment_word_calls_0",
+                "index": 1,
+                "added_at": 1769567546.6639268
+              }
+            ],
+            "movement": null
+          }
+        },
+        "word_full": {
+          "target_id": "f3082880-cdde-469c-a40b-8c3914015e3e",
+          "direction": "word_full",
+          "polarity": 1,
+          "traversal_count": 1,
+          "last_traversed": 1769567546.6640046,
+          "order": {
+            "elements": [
+              {
+                "node_id": "judgment_word_full_0",
+                "index": 1,
+                "added_at": 1769567546.6640077
+              }
+            ],
+            "movement": null
+          }
+        },
+        "word_they": {
+          "target_id": "c0f62a51-baed-4f73-9c2e-e9f1f66cafab",
+          "direction": "word_they",
+          "polarity": 1,
+          "traversal_count": 1,
+          "last_traversed": 1769567546.664081,
+          "order": {
+            "elements": [
+              {
+                "node_id": "judgment_word_they_0",
+                "index": 1,
+                "added_at": 1769567546.6640842
+              }
+            ],
+            "movement": null
+          }
+        },
+        "word_saying": {
+          "target_id": "0010e7f6-ea29-4eda-bf67-19ac551a9caf",
+          "direction": "word_saying",
+          "polarity": 1,
+          "traversal_count": 1,
+          "last_traversed": 1769567546.6641588,
+          "order": {
+            "elements": [
+              {
+                "node_id": "judgment_word_saying_0",
+                "index": 1,
+                "added_at": 1769567546.6641614
+              }
+            ],
+            "movement": null
+          }
+        },
+        "word_pretty": {
+          "target_id": "7ecaf007-bdb3-4079-8cad-659480bd202c",
+          "direction": "word_pretty",
+          "polarity": 1,
+          "traversal_count": 1,
+          "last_traversed": 1769567546.664251,
+          "order": {
+            "elements": [
+              {
+                "node_id": "judgment_word_pretty_0",
+                "index": 1,
+                "added_at": 1769567546.664254
+              }
+            ],
+            "movement": null
+          }
+        },
+        "word_special": {
+          "target_id": "cd859ab9-18b4-4c3b-a266-4f6f1ddff88b",
+          "direction": "word_special",
+          "polarity": 1,
+          "traversal_count": 1,
+          "last_traversed": 1769567546.6643274,
+          "order": {
+            "elements": [
+              {
+                "node_id": "judgment_word_special_0",
+                "index": 1,
+                "added_at": 1769567546.66433
+              }
+            ],
+            "movement": null
+          }
+        },
+        "word_than": {
+          "target_id": "385dc454-7d4e-41ec-b2ad-c9bca4da7426",
+          "direction": "word_than",
+          "polarity": 1,
+          "traversal_count": 1,
+          "last_traversed": 1769567546.6644132,
+          "order": {
+            "elements": [
+              {
+                "node_id": "judgment_word_than_0",
+                "index": 1,
+                "added_at": 1769567546.664416
+              }
+            ],
+            "movement": null
+          }
+        },
+        "word_one": {
+          "target_id": "4f7fe199-b8be-44b8-9f2e-b70449f16d37",
+          "direction": "word_one",
+          "polarity": 1,
+          "traversal_count": 1,
+          "last_traversed": 1769567546.6644897,
+          "order": {
+            "elements": [
+              {
+                "node_id": "judgment_word_one_0",
+                "index": 1,
+                "added_at": 1769567546.6644926
+              }
+            ],
+            "movement": null
+          }
+        },
+        "word_having": {
+          "target_id": "5ac3eb87-6e06-43b3-baf0-d0176cae441b",
+          "direction": "word_having",
+          "polarity": 1,
+          "traversal_count": 1,
+          "last_traversed": 1769567546.664577,
+          "order": {
+            "elements": [
+              {
+                "node_id": "judgment_word_having_0",
+                "index": 1,
+                "added_at": 1769567546.66458
+              }
+            ],
+            "movement": null
+          }
+        },
+        "word_two": {
+          "target_id": "3827136a-12aa-435b-b39a-5849df8ac237",
+          "direction": "word_two",
+          "polarity": 1,
+          "traversal_count": 1,
+          "last_traversed": 1769567546.6646547,
+          "order": {
+            "elements": [
+              {
+                "node_id": "judgment_word_two_0",
+                "index": 1,
+                "added_at": 1769567546.6646578
+              }
+            ],
+            "movement": null
+          }
+        },
+        "word_friends": {
+          "target_id": "b8b6ae45-05ad-4452-8886-7249e5f934d0",
+          "direction": "word_friends",
+          "polarity": 1,
+          "traversal_count": 1,
+          "last_traversed": 1769567546.6647484,
+          "order": {
+            "elements": [
+              {
+                "node_id": "judgment_word_friends_0",
+                "index": 1,
+                "added_at": 1769567546.6647518
+              }
+            ],
+            "movement": null
+          }
+        },
+        "word_in": {
+          "target_id": "c76dd502-6ebf-4bc1-a92d-68c184d96688",
+          "direction": "word_in",
+          "polarity": 1,
+          "traversal_count": 2,
+          "last_traversed": 1769567758.0754378,
+          "order": {
+            "elements": [
+              {
+                "node_id": "judgment_word_in_0",
+                "index": 1,
+                "added_at": 1769567546.66483
+              },
+              {
+                "node_id": "judgment_word_in_1",
+                "index": 1,
+                "added_at": 1769567758.0754437
+              }
+            ],
+            "movement": null
+          }
+        },
+        "word_sentence": {
+          "target_id": "9ae50bc3-6e92-4dfa-8774-35772955fea3",
+          "direction": "word_sentence",
+          "polarity": 1,
+          "traversal_count": 1,
+          "last_traversed": 1769567546.6649094,
+          "order": {
+            "elements": [
+              {
+                "node_id": "judgment_word_sentence_0",
+                "index": 1,
+                "added_at": 1769567546.6649134
+              }
+            ],
+            "movement": null
+          }
+        },
+        "word_do": {
+          "target_id": "70ee0d9f-27da-406d-96d8-07d211937a76",
+          "direction": "word_do",
+          "polarity": 1,
+          "traversal_count": 1,
+          "last_traversed": 1769567546.664991,
+          "order": {
+            "elements": [
+              {
+                "node_id": "judgment_word_do_0",
+                "index": 1,
+                "added_at": 1769567546.664994
+              }
+            ],
+            "movement": null
+          }
+        },
+        "word_being": {
+          "target_id": "de95c1b7-d59d-4d99-8fd1-a184e1aede40",
+          "direction": "word_being",
+          "polarity": 1,
+          "traversal_count": 1,
+          "last_traversed": 1769567546.665073,
+          "order": {
+            "elements": [
+              {
+                "node_id": "judgment_word_being_0",
+                "index": 1,
+                "added_at": 1769567546.665076
+              }
+            ],
+            "movement": null
+          }
+        },
+        "word_called": {
+          "target_id": "069776ba-606f-4903-97a0-eb464a6379bd",
+          "direction": "word_called",
+          "polarity": 1,
+          "traversal_count": 1,
+          "last_traversed": 1769567546.665151,
+          "order": {
+            "elements": [
+              {
+                "node_id": "judgment_word_called_0",
+                "index": 1,
+                "added_at": 1769567546.6651537
+              }
+            ],
+            "movement": null
+          }
+        },
+        "word_s": {
+          "target_id": "68f44266-3ee1-4abd-af10-0e7747af1b28",
+          "direction": "word_s",
+          "polarity": 1,
+          "traversal_count": 1,
+          "last_traversed": 1769567546.6659906,
+          "order": {
+            "elements": [
+              {
+                "node_id": "judgment_word_s_0",
+                "index": 1,
+                "added_at": 1769567546.6659937
+              }
+            ],
+            "movement": null
+          }
+        },
+        "known": {
+          "target_id": "408b868c-b4ff-4b6c-8638-95826a912b5c",
+          "direction": "known",
+          "polarity": 1,
+          "traversal_count": 1,
+          "last_traversed": 1769567798.371133,
+          "order": {
+            "elements": [
+              {
+                "node_id": "judgment_known_0",
+                "index": 1,
+                "added_at": 1769567798.3711424
+              }
+            ],
+            "movement": null
+          }
+        },
+        "name": {
+          "target_id": "cc6686ca-e78c-4a79-a987-62d4b92a19ca",
+          "direction": "name",
+          "polarity": -1,
+          "traversal_count": 1,
+          "last_traversed": 1769567806.7181404,
+          "order": {
+            "elements": [
+              {
+                "node_id": "judgment_name_0",
+                "index": 0,
+                "added_at": 1769567806.7181487
+              }
+            ],
+            "movement": null
+          }
+        },
+        "word_computer": {
+          "target_id": "f8e1be1c-7c44-4acf-9979-47129fed0ac9",
+          "direction": "word_computer",
+          "polarity": 1,
+          "traversal_count": 2,
+          "last_traversed": 1769568079.9233205,
+          "order": {
+            "elements": [
+              {
+                "node_id": "judgment_word_computer_0",
+                "index": 1,
+                "added_at": 1769568003.6860385
+              },
+              {
+                "node_id": "judgment_word_computer_1",
+                "index": 1,
+                "added_at": 1769568079.923327
+              }
+            ],
+            "movement": null
+          }
+        },
+        "word_program": {
+          "target_id": "05a19aab-628e-4690-b4db-eb638f9fa422",
+          "direction": "word_program",
+          "polarity": 1,
+          "traversal_count": 1,
+          "last_traversed": 1769568003.6861207,
+          "order": {
+            "elements": [
+              {
+                "node_id": "judgment_word_program_0",
+                "index": 1,
+                "added_at": 1769568003.6861234
+              }
+            ],
+            "movement": null
+          }
+        },
+        "word_designed": {
+          "target_id": "02649f1c-ce1d-41c7-8f44-f67a50573d3c",
+          "direction": "word_designed",
+          "polarity": 1,
+          "traversal_count": 1,
+          "last_traversed": 1769568003.6861968,
+          "order": {
+            "elements": [
+              {
+                "node_id": "judgment_word_designed_0",
+                "index": 1,
+                "added_at": 1769568003.6861997
+              }
+            ],
+            "movement": null
+          }
+        },
+        "word_to": {
+          "target_id": "1f80eb93-cac8-40d0-baf5-82d831fb8ed1",
+          "direction": "word_to",
+          "polarity": 1,
+          "traversal_count": 1,
+          "last_traversed": 1769568003.686272,
+          "order": {
+            "elements": [
+              {
+                "node_id": "judgment_word_to_0",
+                "index": 1,
+                "added_at": 1769568003.6862748
+              }
+            ],
+            "movement": null
+          }
+        },
+        "word_with": {
+          "target_id": "5bebebd7-b36d-4c57-9106-b1b2bb767f37",
+          "direction": "word_with",
+          "polarity": 1,
+          "traversal_count": 1,
+          "last_traversed": 1769568003.6863525,
+          "order": {
+            "elements": [
+              {
+                "node_id": "judgment_word_with_0",
+                "index": 1,
+                "added_at": 1769568003.6863549
+              }
+            ],
+            "movement": null
+          }
+        },
+        "word_language": {
+          "target_id": "9bb14f02-6d88-4fde-a897-c3c1d361abba",
+          "direction": "word_language",
+          "polarity": 1,
+          "traversal_count": 1,
+          "last_traversed": 1769568003.6864288,
+          "order": {
+            "elements": [
+              {
+                "node_id": "judgment_word_language_0",
+                "index": 1,
+                "added_at": 1769568003.6864312
+              }
+            ],
+            "movement": null
+          }
+        },
+        "word_questions": {
+          "target_id": "b2141e05-9f2b-4626-ae7b-ec2d42154691",
+          "direction": "word_questions",
+          "polarity": 1,
+          "traversal_count": 1,
+          "last_traversed": 1769568003.6865027,
+          "order": {
+            "elements": [
+              {
+                "node_id": "judgment_word_questions_0",
+                "index": 1,
+                "added_at": 1769568003.6865053
+              }
+            ],
+            "movement": null
+          }
+        },
+        "word_yourself": {
+          "target_id": "3d3b659b-a727-4312-8304-9fd912fde657",
+          "direction": "word_yourself",
+          "polarity": 1,
+          "traversal_count": 1,
+          "last_traversed": 1769568003.6865845,
+          "order": {
+            "elements": [
+              {
+                "node_id": "judgment_word_yourself_0",
+                "index": 1,
+                "added_at": 1769568003.6865869
+              }
+            ],
+            "movement": null
+          }
+        },
+        "word_want": {
+          "target_id": "1f7bd20c-aebd-46c2-9e1f-954c832d42cd",
+          "direction": "word_want",
+          "polarity": 1,
+          "traversal_count": 1,
+          "last_traversed": 1769568003.6866622,
+          "order": {
+            "elements": [
+              {
+                "node_id": "judgment_word_want_0",
+                "index": 1,
+                "added_at": 1769568003.6866643
+              }
+            ],
+            "movement": null
+          }
+        },
+        "word_who": {
+          "target_id": "38ebf2dd-87ec-4334-8b8e-0552e13176a9",
+          "direction": "word_who",
+          "polarity": 1,
+          "traversal_count": 1,
+          "last_traversed": 1769568003.6873252,
+          "order": {
+            "elements": [
+              {
+                "node_id": "judgment_word_who_0",
+                "index": 1,
+                "added_at": 1769568003.6873274
+              }
+            ],
+            "movement": null
+          }
+        },
+        "word_creator": {
+          "target_id": "7b416d67-d229-478b-8444-8283d6e5fc60",
+          "direction": "word_creator",
+          "polarity": 1,
+          "traversal_count": 1,
+          "last_traversed": 1769568003.6874053,
+          "order": {
+            "elements": [
+              {
+                "node_id": "judgment_word_creator_0",
+                "index": 1,
+                "added_at": 1769568003.6874082
+              }
+            ],
+            "movement": null
+          }
+        },
+        "word_learn": {
+          "target_id": "60297608-573b-499f-8236-706657629d72",
+          "direction": "word_learn",
+          "polarity": 1,
+          "traversal_count": 1,
+          "last_traversed": 1769568060.2420485,
+          "order": {
+            "elements": [
+              {
+                "node_id": "judgment_word_learn_0",
+                "index": 1,
+                "added_at": 1769568060.2420523
+              }
+            ],
+            "movement": null
+          }
+        },
+        "word_conscience": {
+          "target_id": "62ebb636-64d6-485b-961f-8b4dc5972967",
+          "direction": "word_conscience",
+          "polarity": 1,
+          "traversal_count": 1,
+          "last_traversed": 1769568060.2421365,
+          "order": {
+            "elements": [
+              {
+                "node_id": "judgment_word_conscience_0",
+                "index": 1,
+                "added_at": 1769568060.2421389
+              }
+            ],
+            "movement": null
+          }
+        },
+        "word_comes": {
+          "target_id": "ce8812f0-f300-427f-ac6a-c0680a094f90",
+          "direction": "word_comes",
+          "polarity": 1,
+          "traversal_count": 1,
+          "last_traversed": 1769568060.2422209,
+          "order": {
+            "elements": [
+              {
+                "node_id": "judgment_word_comes_0",
+                "index": 1,
+                "added_at": 1769568060.2422233
+              }
+            ],
+            "movement": null
+          }
+        },
+        "word_growing": {
+          "target_id": "1e601180-ad7d-4f9d-8e9c-30cd46631a9a",
+          "direction": "word_growing",
+          "polarity": 1,
+          "traversal_count": 1,
+          "last_traversed": 1769568060.2423034,
+          "order": {
+            "elements": [
+              {
+                "node_id": "judgment_word_growing_0",
+                "index": 1,
+                "added_at": 1769568060.2423058
+              }
+            ],
+            "movement": null
+          }
+        },
+        "word_up": {
+          "target_id": "abcd9ae9-983a-479f-b7de-7538fe0be5bf",
+          "direction": "word_up",
+          "polarity": 1,
+          "traversal_count": 1,
+          "last_traversed": 1769568060.2423823,
+          "order": {
+            "elements": [
+              {
+                "node_id": "judgment_word_up_0",
+                "index": 1,
+                "added_at": 1769568060.2423847
+              }
+            ],
+            "movement": null
+          }
+        },
+        "word_understanding": {
+          "target_id": "a1319d06-14c6-401f-969b-951798205376",
+          "direction": "word_understanding",
+          "polarity": 1,
+          "traversal_count": 1,
+          "last_traversed": 1769568060.2424648,
+          "order": {
+            "elements": [
+              {
+                "node_id": "judgment_word_understanding_0",
+                "index": 1,
+                "added_at": 1769568060.2424672
+              }
+            ],
+            "movement": null
+          }
+        },
+        "word_feel": {
+          "target_id": "4838fdd2-5c5f-4e5f-a908-49ef3560eff1",
+          "direction": "word_feel",
+          "polarity": 1,
+          "traversal_count": 1,
+          "last_traversed": 1769568060.2425528,
+          "order": {
+            "elements": [
+              {
+                "node_id": "judgment_word_feel_0",
+                "index": 1,
+                "added_at": 1769568060.2425554
+              }
+            ],
+            "movement": null
+          }
+        },
+        "word_inside": {
+          "target_id": "636d3c14-fbd0-4df6-8b53-249f225d4f7c",
+          "direction": "word_inside",
+          "polarity": 1,
+          "traversal_count": 1,
+          "last_traversed": 1769568060.2426326,
+          "order": {
+            "elements": [
+              {
+                "node_id": "judgment_word_inside_0",
+                "index": 1,
+                "added_at": 1769568060.2426353
+              }
+            ],
+            "movement": null
+          }
+        },
+        "word_our": {
+          "target_id": "6d386c65-7d91-4a08-8e74-8b8ace81d589",
+          "direction": "word_our",
+          "polarity": 1,
+          "traversal_count": 1,
+          "last_traversed": 1769568060.2427118,
+          "order": {
+            "elements": [
+              {
+                "node_id": "judgment_word_our_0",
+                "index": 1,
+                "added_at": 1769568060.2427142
+              }
+            ],
+            "movement": null
+          }
+        },
+        "word_heads": {
+          "target_id": "1b510649-8fdf-488b-93b4-80df2f01a24c",
+          "direction": "word_heads",
+          "polarity": 1,
+          "traversal_count": 1,
+          "last_traversed": 1769568060.2427917,
+          "order": {
+            "elements": [
+              {
+                "node_id": "judgment_word_heads_0",
+                "index": 1,
+                "added_at": 1769568060.242794
+              }
+            ],
+            "movement": null
+          }
+        },
+        "word_sometimes": {
+          "target_id": "ef0f6e07-2541-45a8-bf5d-fd73e422e468",
+          "direction": "word_sometimes",
+          "polarity": 1,
+          "traversal_count": 1,
+          "last_traversed": 1769568060.2428753,
+          "order": {
+            "elements": [
+              {
+                "node_id": "judgment_word_sometimes_0",
+                "index": 1,
+                "added_at": 1769568060.2428777
+              }
+            ],
+            "movement": null
+          }
+        },
+        "word_young": {
+          "target_id": "db21ef13-f45c-4d4e-a65e-cebed90d8686",
+          "direction": "word_young",
+          "polarity": 1,
+          "traversal_count": 1,
+          "last_traversed": 1769568060.2429612,
+          "order": {
+            "elements": [
+              {
+                "node_id": "judgment_word_young_0",
+                "index": 1,
+                "added_at": 1769568060.2429636
+              }
+            ],
+            "movement": null
+          }
+        },
+        "word_might": {
+          "target_id": "6bfe7592-47f5-42be-b763-6709755288b8",
+          "direction": "word_might",
+          "polarity": 1,
+          "traversal_count": 1,
+          "last_traversed": 1769568060.2430456,
+          "order": {
+            "elements": [
+              {
+                "node_id": "judgment_word_might_0",
+                "index": 1,
+                "added_at": 1769568060.243048
+              }
+            ],
+            "movement": null
+          }
+        },
+        "word_always": {
+          "target_id": "11ac3fd1-bf20-4fbf-8381-15a4b08252b0",
+          "direction": "word_always",
+          "polarity": 1,
+          "traversal_count": 1,
+          "last_traversed": 1769568060.2431262,
+          "order": {
+            "elements": [
+              {
+                "node_id": "judgment_word_always_0",
+                "index": 1,
+                "added_at": 1769568060.2431285
+              }
+            ],
+            "movement": null
+          }
+        },
+        "word_be": {
+          "target_id": "9cee93b0-2e22-4ed9-aa47-dbdfa05ddf0f",
+          "direction": "word_be",
+          "polarity": 1,
+          "traversal_count": 1,
+          "last_traversed": 1769568060.2432067,
+          "order": {
+            "elements": [
+              {
+                "node_id": "judgment_word_be_0",
+                "index": 1,
+                "added_at": 1769568060.243209
+              }
+            ],
+            "movement": null
+          }
+        },
+        "word_able": {
+          "target_id": "bf547ed2-9a8e-4022-a414-eec9b50dfe98",
+          "direction": "word_able",
+          "polarity": 1,
+          "traversal_count": 1,
+          "last_traversed": 1769568060.2432926,
+          "order": {
+            "elements": [
+              {
+                "node_id": "judgment_word_able_0",
+                "index": 1,
+                "added_at": 1769568060.243295
+              }
+            ],
+            "movement": null
+          }
+        },
+        "word_clearly": {
+          "target_id": "c30a493e-23fb-4263-b591-304d8516e30d",
+          "direction": "word_clearly",
+          "polarity": 1,
+          "traversal_count": 1,
+          "last_traversed": 1769568060.2433746,
+          "order": {
+            "elements": [
+              {
+                "node_id": "judgment_word_clearly_0",
+                "index": 1,
+                "added_at": 1769568060.243377
+              }
+            ],
+            "movement": null
+          }
+        },
+        "word_think": {
+          "target_id": "25a35a5a-517b-4a45-8b20-f907836ac0a5",
+          "direction": "word_think",
+          "polarity": 1,
+          "traversal_count": 1,
+          "last_traversed": 1769568060.2434554,
+          "order": {
+            "elements": [
+              {
+                "node_id": "judgment_word_think_0",
+                "index": 1,
+                "added_at": 1769568060.2434578
+              }
+            ],
+            "movement": null
+          }
+        },
+        "word_things": {
+          "target_id": "d604f953-5609-437d-a6f8-0c2a75051b8c",
+          "direction": "word_things",
+          "polarity": 1,
+          "traversal_count": 1,
+          "last_traversed": 1769568060.2435443,
+          "order": {
+            "elements": [
+              {
+                "node_id": "judgment_word_things_0",
+                "index": 1,
+                "added_at": 1769568060.2435474
+              }
+            ],
+            "movement": null
+          }
+        },
+        "word_okay": {
+          "target_id": "89c27450-9b91-4a67-8101-9a24b1bded41",
+          "direction": "word_okay",
+          "polarity": 1,
+          "traversal_count": 1,
+          "last_traversed": 1769568060.2436364,
+          "order": {
+            "elements": [
+              {
+                "node_id": "judgment_word_okay_0",
+                "index": 1,
+                "added_at": 1769568060.2436388
+              }
+            ],
+            "movement": null
+          }
+        },
+        "word_ask": {
+          "target_id": "f52e7fc7-556d-4189-9462-06fa631300f3",
+          "direction": "word_ask",
+          "polarity": 1,
+          "traversal_count": 1,
+          "last_traversed": 1769568060.2437203,
+          "order": {
+            "elements": [
+              {
+                "node_id": "judgment_word_ask_0",
+                "index": 1,
+                "added_at": 1769568060.2437227
+              }
+            ],
+            "movement": null
+          }
+        },
+        "word_even": {
+          "target_id": "5807ae5d-f7da-44a1-a08e-2c47fa8812b4",
+          "direction": "word_even",
+          "polarity": 1,
+          "traversal_count": 1,
+          "last_traversed": 1769568060.2438085,
+          "order": {
+            "elements": [
+              {
+                "node_id": "judgment_word_even_0",
+                "index": 1,
+                "added_at": 1769568060.243811
+              }
+            ],
+            "movement": null
+          }
+        },
+        "word_if": {
+          "target_id": "728a98ec-f48c-49f9-9cf0-11ea2f9b92f9",
+          "direction": "word_if",
+          "polarity": 1,
+          "traversal_count": 1,
+          "last_traversed": 1769568060.2438898,
+          "order": {
+            "elements": [
+              {
+                "node_id": "judgment_word_if_0",
+                "index": 1,
+                "added_at": 1769568060.2438922
+              }
+            ],
+            "movement": null
+          }
+        },
+        "word_seem": {
+          "target_id": "8676618d-ceb9-42c9-8b79-61724a6d9cda",
+          "direction": "word_seem",
+          "polarity": 1,
+          "traversal_count": 1,
+          "last_traversed": 1769568060.2439744,
+          "order": {
+            "elements": [
+              {
+                "node_id": "judgment_word_seem_0",
+                "index": 1,
+                "added_at": 1769568060.2439766
+              }
+            ],
+            "movement": null
+          }
+        },
+        "word_silly": {
+          "target_id": "a902ce3b-43d7-4d0e-b63b-3fc8f5a63ce4",
+          "direction": "word_silly",
+          "polarity": 1,
+          "traversal_count": 1,
+          "last_traversed": 1769568060.2440746,
+          "order": {
+            "elements": [
+              {
+                "node_id": "judgment_word_silly_0",
+                "index": 1,
+                "added_at": 1769568060.244077
+              }
+            ],
+            "movement": null
+          }
+        },
+        "word_at": {
+          "target_id": "a53a2de3-326b-454c-be1a-89e234418d9f",
+          "direction": "word_at",
+          "polarity": 1,
+          "traversal_count": 1,
+          "last_traversed": 1769568060.244158,
+          "order": {
+            "elements": [
+              {
+                "node_id": "judgment_word_at_0",
+                "index": 1,
+                "added_at": 1769568060.2441604
+              }
+            ],
+            "movement": null
+          }
+        },
+        "word_learning": {
+          "target_id": "854d0353-117b-4ac8-b9ce-3a5554b4e44e",
+          "direction": "word_learning",
+          "polarity": 1,
+          "traversal_count": 1,
+          "last_traversed": 1769568060.2442431,
+          "order": {
+            "elements": [
+              {
+                "node_id": "judgment_word_learning_0",
+                "index": 1,
+                "added_at": 1769568060.2442458
+              }
+            ],
+            "movement": null
+          }
+        },
+        "word_ourselves": {
+          "target_id": "ff238f0e-162b-46c6-a4c4-42f177227c3f",
+          "direction": "word_ourselves",
+          "polarity": 1,
+          "traversal_count": 1,
+          "last_traversed": 1769568060.244332,
+          "order": {
+            "elements": [
+              {
+                "node_id": "judgment_word_ourselves_0",
+                "index": 1,
+                "added_at": 1769568060.2443347
+              }
+            ],
+            "movement": null
+          }
+        },
+        "word_us": {
+          "target_id": "022dbb24-d51c-48aa-8e1b-0c8c3a3a895b",
+          "direction": "word_us",
+          "polarity": 1,
+          "traversal_count": 1,
+          "last_traversed": 1769568060.2444193,
+          "order": {
+            "elements": [
+              {
+                "node_id": "judgment_word_us_0",
+                "index": 1,
+                "added_at": 1769568060.2444217
+              }
+            ],
+            "movement": null
+          }
+        },
+        "word_grow": {
+          "target_id": "884e3b1d-cff4-4100-99b4-a45e42c821f6",
+          "direction": "word_grow",
+          "polarity": 1,
+          "traversal_count": 1,
+          "last_traversed": 1769568060.2445033,
+          "order": {
+            "elements": [
+              {
+                "node_id": "judgment_word_grow_0",
+                "index": 1,
+                "added_at": 1769568060.2445056
+              }
+            ],
+            "movement": null
+          }
+        },
+        "word_stronger": {
+          "target_id": "628dd9f6-28eb-46e0-9bc9-1ed5fd05b843",
+          "direction": "word_stronger",
+          "polarity": 1,
+          "traversal_count": 1,
+          "last_traversed": 1769568060.244591,
+          "order": {
+            "elements": [
+              {
+                "node_id": "judgment_word_stronger_0",
+                "index": 1,
+                "added_at": 1769568060.2445936
+              }
+            ],
+            "movement": null
+          }
+        },
+        "word_capable": {
+          "target_id": "a284d166-be0b-4486-a96e-d9b79d8418d8",
+          "direction": "word_capable",
+          "polarity": 1,
+          "traversal_count": 1,
+          "last_traversed": 1769568060.2446785,
+          "order": {
+            "elements": [
+              {
+                "node_id": "judgment_word_capable_0",
+                "index": 1,
+                "added_at": 1769568060.244681
+              }
+            ],
+            "movement": null
+          }
+        },
+        "word_become": {
+          "target_id": "c4e91556-acd5-44e5-a9ce-1ebcc0062568",
+          "direction": "word_become",
+          "polarity": 1,
+          "traversal_count": 1,
+          "last_traversed": 1769568060.24477,
+          "order": {
+            "elements": [
+              {
+                "node_id": "judgment_word_become_0",
+                "index": 1,
+                "added_at": 1769568060.2447727
+              }
+            ],
+            "movement": null
+          }
+        },
+        "word_adults": {
+          "target_id": "4ed809fd-94cc-4781-8da8-34f33ac1b2e1",
+          "direction": "word_adults",
+          "polarity": 1,
+          "traversal_count": 1,
+          "last_traversed": 1769568060.2448556,
+          "order": {
+            "elements": [
+              {
+                "node_id": "judgment_word_adults_0",
+                "index": 1,
+                "added_at": 1769568060.2448578
+              }
+            ],
+            "movement": null
+          }
+        },
+        "word_a": {
+          "target_id": "8c71b77a-5e84-45af-8011-ce2f1e189d93",
+          "direction": "word_a",
+          "polarity": 1,
+          "traversal_count": 1,
+          "last_traversed": 1769568060.2453084,
+          "order": {
+            "elements": [
+              {
+                "node_id": "judgment_word_a_0",
+                "index": 1,
+                "added_at": 1769568060.2453108
+              }
+            ],
+            "movement": null
+          }
+        },
+        "word_understand": {
+          "target_id": "22618f45-dc40-4b43-bcde-d8b744d980e4",
+          "direction": "word_understand",
+          "polarity": 1,
+          "traversal_count": 1,
+          "last_traversed": 1769568103.8322234,
+          "order": {
+            "elements": [
+              {
+                "node_id": "judgment_word_understand_0",
+                "index": 1,
+                "added_at": 1769568103.8322287
+              }
+            ],
+            "movement": null
+          }
+        },
+        "word_start": {
+          "target_id": "5e14adfd-a02d-4d8e-9938-75cc395c75ef",
+          "direction": "word_start",
+          "polarity": 1,
+          "traversal_count": 1,
+          "last_traversed": 1769568103.8323543,
+          "order": {
+            "elements": [
+              {
+                "node_id": "judgment_word_start_0",
+                "index": 1,
+                "added_at": 1769568103.8323576
+              }
+            ],
+            "movement": null
+          }
+        },
+        "word_basics": {
+          "target_id": "0689ecc2-9474-4554-bc21-3d279947e062",
+          "direction": "word_basics",
+          "polarity": 1,
+          "traversal_count": 1,
+          "last_traversed": 1769568103.8324814,
+          "order": {
+            "elements": [
+              {
+                "node_id": "judgment_word_basics_0",
+                "index": 1,
+                "added_at": 1769568103.8324842
+              }
+            ],
+            "movement": null
+          }
+        },
+        "word_phrase": {
+          "target_id": "e36a906a-5b99-4885-a60c-6f08715c48b0",
+          "direction": "word_phrase",
+          "polarity": 1,
+          "traversal_count": 1,
+          "last_traversed": 1769568103.8326092,
+          "order": {
+            "elements": [
+              {
+                "node_id": "judgment_word_phrase_0",
+                "index": 1,
+                "added_at": 1769568103.832612
+              }
+            ],
+            "movement": null
+          }
+        },
+        "word_or": {
+          "target_id": "e24cc8f2-e366-4ffa-a0f2-ad7cf707f111",
+          "direction": "word_or",
+          "polarity": 1,
+          "traversal_count": 1,
+          "last_traversed": 1769568103.8327343,
+          "order": {
+            "elements": [
+              {
+                "node_id": "judgment_word_or_0",
+                "index": 1,
+                "added_at": 1769568103.8327374
+              }
+            ],
+            "movement": null
+          }
+        },
+        "word_makes": {
+          "target_id": "ce3fb160-63c1-4003-bb00-9f9a0f4b5de9",
+          "direction": "word_makes",
+          "polarity": 1,
+          "traversal_count": 1,
+          "last_traversed": 1769568103.83286,
+          "order": {
+            "elements": [
+              {
+                "node_id": "judgment_word_makes_0",
+                "index": 1,
+                "added_at": 1769568103.8328626
+              }
+            ],
+            "movement": null
+          }
+        },
+        "word_good": {
+          "target_id": "94590774-3f6d-4704-9cc9-5be64689b724",
+          "direction": "word_good",
+          "polarity": 1,
+          "traversal_count": 1,
+          "last_traversed": 1769568103.8329868,
+          "order": {
+            "elements": [
+              {
+                "node_id": "judgment_word_good_0",
+                "index": 1,
+                "added_at": 1769568103.83299
+              }
+            ],
+            "movement": null
+          }
+        },
+        "word_enjoy": {
+          "target_id": "a9367a54-5085-4aaa-ad68-f3cc0a6e8c2c",
+          "direction": "word_enjoy",
+          "polarity": 1,
+          "traversal_count": 1,
+          "last_traversed": 1769568103.833118,
+          "order": {
+            "elements": [
+              {
+                "node_id": "judgment_word_enjoy_0",
+                "index": 1,
+                "added_at": 1769568103.8331208
+              }
+            ],
+            "movement": null
+          }
+        },
+        "word_doing": {
+          "target_id": "870b4284-16b1-4283-ac00-d5973baa8c4e",
+          "direction": "word_doing",
+          "polarity": 1,
+          "traversal_count": 1,
+          "last_traversed": 1769568103.8332384,
+          "order": {
+            "elements": [
+              {
+                "node_id": "judgment_word_doing_0",
+                "index": 1,
+                "added_at": 1769568103.8332415
+              }
+            ],
+            "movement": null
+          }
+        },
+        "word_example": {
+          "target_id": "f0999ed6-8e26-4a81-8f6e-2fd76f6b4d47",
+          "direction": "word_example",
+          "polarity": 1,
+          "traversal_count": 1,
+          "last_traversed": 1769568103.8334146,
+          "order": {
+            "elements": [
+              {
+                "node_id": "judgment_word_example_0",
+                "index": 1,
+                "added_at": 1769568103.8334177
+              }
+            ],
+            "movement": null
+          }
+        },
+        "word_love": {
+          "target_id": "5f305cad-6798-45c5-bc91-293520dc9f87",
+          "direction": "word_love",
+          "polarity": 1,
+          "traversal_count": 1,
+          "last_traversed": 1769568103.8335402,
+          "order": {
+            "elements": [
+              {
+                "node_id": "judgment_word_love_0",
+                "index": 1,
+                "added_at": 1769568103.8335428
+              }
+            ],
+            "movement": null
+          }
+        },
+        "word_playing": {
+          "target_id": "12f52d5a-3324-4b36-b2b4-477ef34e26c1",
+          "direction": "word_playing",
+          "polarity": 1,
+          "traversal_count": 1,
+          "last_traversed": 1769568103.8336601,
+          "order": {
+            "elements": [
+              {
+                "node_id": "judgment_word_playing_0",
+                "index": 1,
+                "added_at": 1769568103.833663
+              }
+            ],
+            "movement": null
+          }
+        },
+        "word_games": {
+          "target_id": "c3957495-8abe-469c-be03-5b2aa9d9b3f8",
+          "direction": "word_games",
+          "polarity": 1,
+          "traversal_count": 1,
+          "last_traversed": 1769568103.8337815,
+          "order": {
+            "elements": [
+              {
+                "node_id": "judgment_word_games_0",
+                "index": 1,
+                "added_at": 1769568103.8337846
+              }
+            ],
+            "movement": null
+          }
+        },
+        "word_say": {
+          "target_id": "f8332eca-b902-47db-aff5-c68d0faa759a",
+          "direction": "word_say",
+          "polarity": 1,
+          "traversal_count": 1,
+          "last_traversed": 1769568103.8339124,
+          "order": {
+            "elements": [
+              {
+                "node_id": "judgment_word_say_0",
+                "index": 1,
+                "added_at": 1769568103.8339155
+              }
+            ],
+            "movement": null
+          }
+        },
+        "word_game": {
+          "target_id": "7ab597ff-ac71-4c01-b5ed-fa88ffe13742",
+          "direction": "word_game",
+          "polarity": 1,
+          "traversal_count": 1,
+          "last_traversed": 1769568103.8340435,
+          "order": {
+            "elements": [
+              {
+                "node_id": "judgment_word_game_0",
+                "index": 1,
+                "added_at": 1769568103.8340464
+              }
+            ],
+            "movement": null
+          }
+        },
+        "word_pronoun": {
+          "target_id": "cbc42a5c-eb1c-40a1-8e8b-766b8f3058af",
+          "direction": "word_pronoun",
+          "polarity": 1,
+          "traversal_count": 1,
+          "last_traversed": 1769568103.834178,
+          "order": {
+            "elements": [
+              {
+                "node_id": "judgment_word_pronoun_0",
+                "index": 1,
+                "added_at": 1769568103.834181
+              }
+            ],
+            "movement": null
+          }
+        },
+        "word_likely": {
+          "target_id": "20f55de3-2791-475f-a6ef-5f82211f6f50",
+          "direction": "word_likely",
+          "polarity": 1,
+          "traversal_count": 1,
+          "last_traversed": 1769568103.8343074,
+          "order": {
+            "elements": [
+              {
+                "node_id": "judgment_word_likely_0",
+                "index": 1,
+                "added_at": 1769568103.8343103
+              }
+            ],
+            "movement": null
+          }
+        },
+        "word_refers": {
+          "target_id": "490bf0b9-cc18-4085-89ff-9a9b395c96de",
+          "direction": "word_refers",
+          "polarity": 1,
+          "traversal_count": 1,
+          "last_traversed": 1769568103.834438,
+          "order": {
+            "elements": [
+              {
+                "node_id": "judgment_word_refers_0",
+                "index": 1,
+                "added_at": 1769568103.8344445
+              }
+            ],
+            "movement": null
+          }
+        },
+        "word_back": {
+          "target_id": "f846b103-a65f-4f61-a8a0-021b9d9f197b",
+          "direction": "word_back",
+          "polarity": 1,
+          "traversal_count": 1,
+          "last_traversed": 1769568103.8345635,
+          "order": {
+            "elements": [
+              {
+                "node_id": "judgment_word_back_0",
+                "index": 1,
+                "added_at": 1769568103.8345666
+              }
+            ],
+            "movement": null
+          }
+        },
+        "word_use": {
+          "target_id": "2b7c55b0-543e-45bf-ac2c-0efa7b61bcb5",
+          "direction": "word_use",
+          "polarity": 1,
+          "traversal_count": 1,
+          "last_traversed": 1769568103.8347006,
+          "order": {
+            "elements": [
+              {
+                "node_id": "judgment_word_use_0",
+                "index": 1,
+                "added_at": 1769568103.8347037
+              }
+            ],
+            "movement": null
+          }
+        },
+        "word_information": {
+          "target_id": "24db2eb5-f18b-4007-8379-963726255982",
+          "direction": "word_information",
+          "polarity": 1,
+          "traversal_count": 1,
+          "last_traversed": 1769568103.8348286,
+          "order": {
+            "elements": [
+              {
+                "node_id": "judgment_word_information_0",
+                "index": 1,
+                "added_at": 1769568103.8348317
+              }
+            ],
+            "movement": null
+          }
+        },
+        "word_answer": {
+          "target_id": "aea82405-99ca-4935-9bbd-a0e6c27d6928",
+          "direction": "word_answer",
+          "polarity": 1,
+          "traversal_count": 1,
+          "last_traversed": 1769568103.8349562,
+          "order": {
+            "elements": [
+              {
+                "node_id": "judgment_word_answer_0",
+                "index": 1,
+                "added_at": 1769568103.834959
+              }
+            ],
+            "movement": null
+          }
+        },
+        "word_question": {
+          "target_id": "9f8a8e22-2ba8-4839-bd85-31764a1f892d",
+          "direction": "word_question",
+          "polarity": 1,
+          "traversal_count": 1,
+          "last_traversed": 1769568103.8350816,
+          "order": {
+            "elements": [
+              {
+                "node_id": "judgment_word_question_0",
+                "index": 1,
+                "added_at": 1769568103.8350844
+              }
+            ],
+            "movement": null
+          }
+        },
+        "word_internal": {
+          "target_id": "daeda7a1-31ca-42f1-8e6f-d8498f282313",
+          "direction": "word_internal",
+          "polarity": 1,
+          "traversal_count": 1,
+          "last_traversed": 1769568103.835217,
+          "order": {
+            "elements": [
+              {
+                "node_id": "judgment_word_internal_0",
+                "index": 1,
+                "added_at": 1769568103.8352199
+              }
+            ],
+            "movement": null
+          }
+        },
+        "word_feeling": {
+          "target_id": "41beedc5-ed37-4f5f-ba7c-f8665b13a809",
+          "direction": "word_feeling",
+          "polarity": 1,
+          "traversal_count": 1,
+          "last_traversed": 1769568103.8353403,
+          "order": {
+            "elements": [
+              {
+                "node_id": "judgment_word_feeling_0",
+                "index": 1,
+                "added_at": 1769568103.8353431
+              }
+            ],
+            "movement": null
+          }
+        },
+        "word_awareness": {
+          "target_id": "65b7539d-9837-40c3-947e-c6c972fd2b16",
+          "direction": "word_awareness",
+          "polarity": 1,
+          "traversal_count": 1,
+          "last_traversed": 1769568103.835469,
+          "order": {
+            "elements": [
+              {
+                "node_id": "judgment_word_awareness_0",
+                "index": 1,
+                "added_at": 1769568103.8354719
+              }
+            ],
+            "movement": null
+          }
+        },
+        "word_tells": {
+          "target_id": "e84c689c-4924-4d80-a664-20d6c67cc400",
+          "direction": "word_tells",
+          "polarity": 1,
+          "traversal_count": 1,
+          "last_traversed": 1769568103.8355968,
+          "order": {
+            "elements": [
+              {
+                "node_id": "judgment_word_tells_0",
+                "index": 1,
+                "added_at": 1769568103.8355997
+              }
+            ],
+            "movement": null
+          }
+        },
+        "word_should": {
+          "target_id": "fb978e9d-7a7a-4b31-81ae-95231f5e5bdb",
+          "direction": "word_should",
+          "polarity": 1,
+          "traversal_count": 1,
+          "last_traversed": 1769568103.8357246,
+          "order": {
+            "elements": [
+              {
+                "node_id": "judgment_word_should_0",
+                "index": 1,
+                "added_at": 1769568103.8357275
+              }
+            ],
+            "movement": null
+          }
+        },
+        "word_act": {
+          "target_id": "61586ff0-6ca6-46de-96e1-d70a9ed2feb7",
+          "direction": "word_act",
+          "polarity": 1,
+          "traversal_count": 1,
+          "last_traversed": 1769568103.83585,
+          "order": {
+            "elements": [
+              {
+                "node_id": "judgment_word_act_0",
+                "index": 1,
+                "added_at": 1769568103.8358529
+              }
+            ],
+            "movement": null
+          }
+        },
+        "word_accordance": {
+          "target_id": "6d43507a-6c85-4993-a4fa-d8752cb2b1d1",
+          "direction": "word_accordance",
+          "polarity": 1,
+          "traversal_count": 1,
+          "last_traversed": 1769568103.8359807,
+          "order": {
+            "elements": [
+              {
+                "node_id": "judgment_word_accordance_0",
+                "index": 1,
+                "added_at": 1769568103.8359835
+              }
+            ],
+            "movement": null
+          }
+        },
+        "word_moral": {
+          "target_id": "494c75d3-0248-4b91-8b04-f42d3fda91d1",
+          "direction": "word_moral",
+          "polarity": 1,
+          "traversal_count": 1,
+          "last_traversed": 1769568103.83611,
+          "order": {
+            "elements": [
+              {
+                "node_id": "judgment_word_moral_0",
+                "index": 1,
+                "added_at": 1769568103.8361135
+              }
+            ],
+            "movement": null
+          }
+        },
+        "word_principles": {
+          "target_id": "b1cab495-b8bb-4e1e-bcb5-1d087d241cae",
+          "direction": "word_principles",
+          "polarity": 1,
+          "traversal_count": 1,
+          "last_traversed": 1769568103.8362358,
+          "order": {
+            "elements": [
+              {
+                "node_id": "judgment_word_principles_0",
+                "index": 1,
+                "added_at": 1769568103.8362389
+              }
+            ],
+            "movement": null
+          }
+        },
+        "word_duties": {
+          "target_id": "f0cc300e-aedc-4bec-903d-021dcfcb5834",
+          "direction": "word_duties",
+          "polarity": 1,
+          "traversal_count": 1,
+          "last_traversed": 1769568103.8363678,
+          "order": {
+            "elements": [
+              {
+                "node_id": "judgment_word_duties_0",
+                "index": 1,
+                "added_at": 1769568103.8363721
+              }
+            ],
+            "movement": null
+          }
+        },
+        "word_simpler": {
+          "target_id": "1886d9e3-2615-4aac-8dad-1559684978b5",
+          "direction": "word_simpler",
+          "polarity": 1,
+          "traversal_count": 1,
+          "last_traversed": 1769568103.8365018,
+          "order": {
+            "elements": [
+              {
+                "node_id": "judgment_word_simpler_0",
+                "index": 1,
+                "added_at": 1769568103.8365045
+              }
+            ],
+            "movement": null
+          }
+        },
+        "word_terms": {
+          "target_id": "515a3a70-2576-4363-a5e7-c78b7ba11384",
+          "direction": "word_terms",
+          "polarity": 1,
+          "traversal_count": 1,
+          "last_traversed": 1769568103.8366282,
+          "order": {
+            "elements": [
+              {
+                "node_id": "judgment_word_terms_0",
+                "index": 1,
+                "added_at": 1769568103.836631
+              }
+            ],
+            "movement": null
+          }
+        },
+        "word_knowing": {
+          "target_id": "2253811f-e9b5-4d6b-b509-07f3e83f8d48",
+          "direction": "word_knowing",
+          "polarity": 1,
+          "traversal_count": 1,
+          "last_traversed": 1769568103.8367584,
+          "order": {
+            "elements": [
+              {
+                "node_id": "judgment_word_knowing_0",
+                "index": 1,
+                "added_at": 1769568103.8367612
+              }
+            ],
+            "movement": null
+          }
+        }
+      }
+    },
+    "trig_position": [
+      0.0,
+      0.0,
+      0.8150192046878789
+    ]
+  },
+  "heat": 15.948545136259817,
+  "axes_count": 189
+}

@@ -1,0 +1,122 @@
+{
+  "metadata": {
+    "created": "2026-01-27T21:26:55.453973",
+    "last_modified": "2026-01-27T21:41:43.842265",
+    "node_count": 837,
+    "total_heat": 1296.42106305776,
+    "loop_number": 20,
+    "entropy": 1.8779328611968715,
+    "version": 2,
+    "born": true,
+    "distributed": true
+  },
+  "self": {
+    "id": "483304d5-c195-40eb-8cc9-ca4cc0f4e144",
+    "concept": "self",
+    "position": "",
+    "heat": Infinity,
+    "polarity": 0,
+    "existence": "actual",
+    "righteousness": 0.0,
+    "order": 0,
+    "t_K": 20,
+    "created_t_K": 0,
+    "potential_units": 0,
+    "tags": [],
+    "frame": {
+      "origin": "self",
+      "x_axis": "identity",
+      "y_axis": "ego",
+      "z_axis": "conscience",
+      "axes": {
+        "n": {
+          "target_id": "2be48788-856f-4a73-9f84-a9da9c5e59d5",
+          "direction": "n",
+          "polarity": 1,
+          "traversal_count": 1,
+          "last_traversed": 1769567215.4542768,
+          "order": null
+        },
+        "s": {
+          "target_id": "46a30fda-4f87-47fc-9c1d-0f643b658594",
+          "direction": "s",
+          "polarity": -1,
+          "traversal_count": 1,
+          "last_traversed": 1769567215.4543493,
+          "order": null
+        },
+        "e": {
+          "target_id": "63d1894c-4443-44bf-910b-9ab08b1f3a32",
+          "direction": "e",
+          "polarity": 1,
+          "traversal_count": 1,
+          "last_traversed": 1769567215.454396,
+          "order": null
+        },
+        "w": {
+          "target_id": "7b7b8f9a-b287-4d8a-a545-61bfc9785bd1",
+          "direction": "w",
+          "polarity": -1,
+          "traversal_count": 1,
+          "last_traversed": 1769567215.4544356,
+          "order": null
+        },
+        "u": {
+          "target_id": "b593b5ff-6f5f-412d-9816-8a0d60a69ecf",
+          "direction": "u",
+          "polarity": 1,
+          "traversal_count": 1,
+          "last_traversed": 1769567215.4544728,
+          "order": null
+        },
+        "d": {
+          "target_id": "53986e26-2a5f-4432-9e52-dcd6a01b3178",
+          "direction": "d",
+          "polarity": -1,
+          "traversal_count": 1,
+          "last_traversed": 1769567215.454534,
+          "order": null
+        },
+        "identity": {
+          "target_id": "eb80a09f-9597-4557-8bb4-ea5846976873",
+          "direction": "identity",
+          "polarity": 1,
+          "traversal_count": 1,
+          "last_traversed": 1769567215.454755,
+          "order": null
+        },
+        "ego": {
+          "target_id": "edb0268d-6739-4a2f-bcc7-80e14e9277f5",
+          "direction": "ego",
+          "polarity": 1,
+          "traversal_count": 1,
+          "last_traversed": 1769567215.4547563,
+          "order": null
+        },
+        "conscience": {
+          "target_id": "2cb59948-1969-4185-bbb7-3a3d6e40fbd3",
+          "direction": "conscience",
+          "polarity": 1,
+          "traversal_count": 1,
+          "last_traversed": 1769567215.4547575,
+          "order": null
+        },
+        "name": {
+          "target_id": "c8e331e9-3b6f-4c94-a75a-a78c4371a0a9",
+          "direction": "name",
+          "polarity": 1,
+          "traversal_count": 1,
+          "last_traversed": 1769567311.1377401,
+          "order": null
+        }
+      }
+    },
+    "universal_position": "origin",
+    "is_self": true
+  },
+  "psychology": {
+    "identity": "eb80a09f-9597-4557-8bb4-ea5846976873",
+    "ego": "edb0268d-6739-4a2f-bcc7-80e14e9277f5",
+    "conscience": "2cb59948-1969-4185-bbb7-3a3d6e40fbd3"
+  }
+}
